@@ -1,7 +1,7 @@
 (function($) { 
    $.ajax({
         type     : "GET",
-        url      : 'http://1.huangjunhui.sinaapp.com/',
+        url      : 'http://huangjunhui.sinaapp.com/',
         success  : function(data) {
                     $("#counterValue").text(data);
                    },
