@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=44218032" charset="UTF-8"></script>
+  
+  <title>hexo搭建博客的实用功能(上)(基于hexo3.0) | Chillax&#39;s blog</title>
+  <meta name="author" content="huangjunhui">
+  
+  <meta name="description" content="Goals determine what you are going to be">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="hexo搭建博客的实用功能(上)(基于hexo3.0)"/>
+  <meta property="og:site_name" content="Chillax&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Chillax&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">Chillax&#39;s blog</a></h1>
+  <h2><a href="/">Goals determine what you are going to be</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-09T15:57:37.000Z"><a href="/2015/04/09/hexo-guide-2/">2015-04-09</a></time>
+      
+      
+  
+    <h1 class="title">hexo搭建博客的实用功能(上)(基于hexo3.0)</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="前言">前言</h2><p>在上一节中，我们已经学会了使用hexo搭建博客，并且可以使用hexo发布博文。在这一节中，将介绍一些实用的功能，有了这些功能，博客系统看起来会更好用、好看和充实。<br><a id="more"></a></p>
+<h3 id="使用工具来写文章">使用工具来写文章</h3><p>如果您还在使用记事本，或者是notepad++来写您的博客文章，那么我强烈建议您使用<a href="http://markdownpad.com/" target="_blank" rel="external">MarkdownPad</a>，界面图如下，您可以边写边看到效果。不过这个效果对于有些命令并不管用，但这不影响MarkdownPad成为一款出色的Markdown编辑软件。<br><img src="http://markdownpad.com/img/markdownpad2.png" alt=""></p>
+<h3 id="添加“多说”评论">添加“多说”评论</h3><p>正如你们看到的，我的每篇文章最下面都有一个用于评论的功能，如果要自己搞一个评论系统，估计得费不少功夫，但是多说已经帮我们实现了这个功能，我们只需要拿来用即可。步骤如下：<br>1、进入<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>，注册一个帐号，然后点击安装创建一个站点，获得通用代码(建议使用稳定版)。<br>2、两种情况。<br>第一种情况：如果您是使用的是<code>light</code>主题和基于lightum改善的主题，或者说您的<code>E:\hexo\themes\lightum\layout\_partial</code>文件夹下有comment.ejs，则将<code>E:\hexo\themes\lightum\layout\_partial\comment.ejs</code>的代码改成如下代码，其中short_name记得改成您自己的，在通用代码里可以看得到您的short_name。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> ( page.comments)&#123; %&gt;</span><br><span class="line"></span><br><span class="line"> &lt;nav id=<span class="string">"pagination"</span> &gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (page.prev) &#123; %&gt;</span><br><span class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.prev.path %&gt;"</span> class=<span class="string">"alignleft prev"</span> &gt;&lt;%= __(<span class="string">'prev'</span>) %&gt;&lt;/a&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (page.next) &#123; %&gt;</span><br><span class="line">    &lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- page.next.path %&gt;"</span> class=<span class="string">"alignright next"</span> &gt;&lt;%= __(<span class="string">'next'</span>) %&gt;&lt;/a&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;/nav&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;section id=<span class="string">"comment"</span>&gt;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	&lt;!-- 多说评论框 start --&gt;</span><br><span class="line">	&lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= page.path %&gt;"</span> data-title=<span class="string">"&lt;%= page.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">	&lt;!-- 多说评论框 end --&gt;</span><br><span class="line">	&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">	&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">	var duoshuoQuery = &#123;short_name:<span class="string">"chillax"</span>&#125;;</span><br><span class="line">	(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">		var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">		ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">		ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">		ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">		(document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">		 || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">	&#125;)();</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">	&lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">&lt;/section&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>第二种情况：如果您的<code>E:\hexo\themes\lightum\layout\_partial</code>文件下没有comment.ejs，则首先在<code>E:\hexo\themes\landscape\_config.yml</code>中添加多说的配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">duoshuo_shortname: 你站点的short_name</span><br></pre></td></tr></table></figure></p>
+<p>然后修改<code>E:\hexo\themes\landscape\layout\_partial\article.ejs</code>模板，修改如下。<br>把(在article.ejs文件的底部)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;div id=<span class="string">"disqus_thread"</span>&gt;</span><br><span class="line">      &lt;noscript&gt;Please <span class="built_in">enable</span> JavaScript to view the &lt;a href=<span class="string">"//disqus.com/?ref_noscript"</span>&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>改为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">    &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">      (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">        ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">        ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">        (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">         || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">      &#125;)();</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>此处short_name不需要更改。</p>
+<h3 id="添加百度分享">添加百度分享</h3><p>打开<code>E:\hexo\themes\lightum\layout\_partial\article.ejs</code>,找到<code>&lt;%- partial(&#39;post/tag&#39;) %&gt;</code>,然后看<code>&lt;%- partial(&#39;post/tag&#39;) %&gt;</code>下面有没有一行代码为<code>&lt;%-partial(&#39;post/share&#39;)%&gt;</code>,如果有则删除。然后在<code>&lt;%- partial(&#39;post/tag&#39;) %&gt;</code>下方添加如下代码,或者您也可以选择自己去<a href="http://share.baidu.com/code" target="_blank" rel="external">百度分享</a>获取代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Baidu Button BEGIN --&gt;</span><br><span class="line">&lt;div id=<span class="string">"bdshare"</span> class=<span class="string">"bdshare_t bds_tools_32 get-codes-bdshare"</span>&gt;</span><br><span class="line">&lt;a class=<span class="string">"bds_qzone"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;a class=<span class="string">"bds_tsina"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;a class=<span class="string">"bds_tqq"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;a class=<span class="string">"bds_renren"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;a class=<span class="string">"bds_t163"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;span class=<span class="string">"bds_more"</span>&gt;&lt;/span&gt;</span><br><span class="line">&lt;a class=<span class="string">"shareCount"</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> id=<span class="string">"bdshare_js"</span> data=<span class="string">"type=tools&amp;amp;uid=3326447"</span> &gt;&lt;/script&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> id=<span class="string">"bdshell_js"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">document.getElementById(<span class="string">"bdshell_js"</span>).src = <span class="string">"http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion="</span> + Math.ceil(new Date()/<span class="number">3600000</span>)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;!-- Baidu Button END --&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加小图标(本博客为海贼王的图标)">添加小图标(本博客为海贼王的图标)</h3><p>打开<code>E:\hexo\themes\lightum\layout\_partial\head.ejs</code>，搜索<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.png&quot; rel=&quot;icon&quot;&gt;</code>，如果找不到，就搜索<code>&lt;link rel=&quot;icon&quot; href=&quot;&lt;%- theme.favicon %&gt;&quot;&gt;</code>，替换为<code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-ico&quot;&gt;</code>，然后将名字为favicon.ico的图标放在<code>E:\hexo\themes\lightum\source</code>目录下。</p>
+<h3 id="添加分类、标签云widget">添加分类、标签云widget</h3><p>在<code>E:\hexo\themes\lightum\_config.yml</code>中，添加如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- category</span><br><span class="line">- tagcloud</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加友情链接和简介widget">添加友情链接和简介widget</h3><p>添加简介<br>1、在<code>E:\hexo\themes\lightum\layout\_widget</code>下新建名为intro.ejs的文件，编辑内容如下(可根据自身情况修改)。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"widget tag"</span>&gt;</span><br><span class="line">&lt;h3 class=<span class="string">"title"</span>&gt;简介&lt;/h3&gt;</span><br><span class="line">&lt;ul class=<span class="string">"entry"</span>&gt;</span><br><span class="line">&lt;li&gt;本体：黄俊辉&lt;/li&gt;</span><br><span class="line">&lt;li&gt;外文：chillax | grace&lt;/li&gt;</span><br><span class="line">&lt;li&gt;现状：上海实习ing&lt;/li&gt;</span><br><span class="line">&lt;li&gt;职位：Java开发工程师&lt;/li&gt;</span><br><span class="line">&lt;li&gt;QQ  ：<span class="number">123411739</span>&lt;/li&gt;</span><br><span class="line">&lt;li&gt;邮箱：jhhuang1993@foxmail.com&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2、在<code>E:\hexo\themes\lightum\_config.yml</code>中，添加如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- intro</span><br></pre></td></tr></table></figure></p>
+<p>添加友情链接<br>在<code>E:\hexo\themes\lightum\layout\_widget</code>下新建名为blogroll.ejs的文件，编辑内容如下(可根据自身情况修改)。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"widget tag"</span>&gt;</span><br><span class="line">&lt;h3 class=<span class="string">"title"</span>&gt;友情链接&lt;/h3&gt;</span><br><span class="line">&lt;ul class=<span class="string">"entry"</span>&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=<span class="string">"http://huangjunhui.gitcafe.io/"</span> title=<span class="string">"Chillax's Blog"</span>&gt;Chillax&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2、在<code>E:\hexo\themes\lightum\_config.yml</code>中，添加如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- blogroll</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加新浪微博秀widget">添加新浪微博秀widget</h3><p>1、在<a href="http://open.weibo.com/widgets?cat=wb" target="_blank" rel="external">新浪微博开发平台</a>设置自己想要的微博秀样式，并复制生成的代码。<br>2、在<code>E:\hexo\themes\lightum\widget</code>中新建名为<code>weibo.ejs</code>的文件，并将刚才微博秀获得的代码直接保存在该文件下。<br>3、在<code>E:\hexo\themes\lightum\_config.yml</code>中，添加如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">widgets:</span><br><span class="line">- weibo</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加导航栏中的“关于”">添加导航栏中的“关于”</h3><p>1、在Git Bash下执行命令<code>$ hexo new page &quot;about&quot;</code><br>2、到<code>E:\hexo\source\about</code>下找到index.md，编辑自己想要的内容，格式和发普通文章一样。<br>3、在<code>E:\hexo\themes\lightum\_config.yml</code>中，添加如下代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  关于: /about</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/hexo/">hexo</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2015/04/09/hexo-guide/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+	
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2015/04/09/hexo-guide-2/" data-title="hexo搭建博客的实用功能(上)(基于hexo3.0)" data-url="http://yoursite.com/2015/04/09/hexo-guide-2/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chillax"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：黄俊辉</li>
+<li>外文：chillax | grace</li>
+<li>现状：上海实习ing</li>
+<li>职位：Java开发工程师</li>
+<li>QQ  ：123411739</li>
+<li>邮箱：jhhuang1993@foxmail.com</li>
+<li>访问：<strong id="counterValue"></strong> 次</li>
+</ul>
+</div>
+
+
+
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/git/">git</a><small>1</small></li>
+  
+    <li><a href="/categories/hexo/">hexo</a><small>3</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/git/" style="font-size: 10px;">git</a><a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="140" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=140&fansRow=2&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1923610190&verifier=6af5ad6a&colors=ffffff,ffffff,000000,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/v123411739" title="Grace's Blog">Grace</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+Powered by <a href="http://hexo.io/">hexo</a> and Theme by <a href="https://github.com/zippera/lightum">Lightum</a> @2015 huangjunhui
+</section>
+
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/counter.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+<a href="https://github.com/huangjunhui" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://i1.tietuku.com/21043e8ce4655323.png" alt="Fork me on GitHub"></a>
