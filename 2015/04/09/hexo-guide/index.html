@@ -1,26 +1,234 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Chillax's blog]]></title>
-  <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-04-09T05:33:32.043Z</updated>
-  <id>http://yoursite.com/</id>
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
   
-  <author>
-    <name><![CDATA[huangjunhui]]></name>
+  <title>使用Hexo搭建个人博客(基于hexo3.0) | Chillax&#39;s blog</title>
+  <meta name="author" content="huangjunhui">
+  
+  <meta name="description" content="Goals determine what you are going to be">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="使用Hexo搭建个人博客(基于hexo3.0)"/>
+  <meta property="og:site_name" content="Chillax&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Chillax&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">Chillax&#39;s blog</a></h1>
+  <h2><a href="/">Goals determine what you are going to be</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
     
-  </author>
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
   
-  <entry>
-    <title><![CDATA[使用Hexo搭建个人博客(基于hexo3.0)]]></title>
-    <link href="http://yoursite.com/2015/04/09/hexo-guide/"/>
-    <id>http://yoursite.com/2015/04/09/hexo-guide/</id>
-    <published>2015-04-09T05:32:09.000Z</published>
-    <updated>2015-04-09T05:33:32.043Z</updated>
-    <content type="html"><![CDATA[<h2 id="动机">动机</h2><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着<a href="http://zipperary.com/" target="_blank" rel="external">zippera</a>的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因有下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。</p>
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-09T05:32:09.000Z"><a href="/2015/04/09/hexo-guide/">2015-04-09</a></time>
+      
+      
+  
+    <h1 class="title">使用Hexo搭建个人博客(基于hexo3.0)</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="动机">动机</h2><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着<a href="http://zipperary.com/" target="_blank" rel="external">zippera</a>的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因有下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。</p>
 <h2 id="正文">正文</h2><h3 id="准备工具">准备工具</h3><p>首先声明，本教程针对的是windows用户。</p>
 <h3 id="安装Git">安装Git</h3><p>下载并安装<a href="http://code.google.com/p/msysgit/" target="_blank" rel="external">msysgit</a>或者是<a href="http://www.xiazaiba.com/html/25984.html" target="_blank" rel="external">msysgit中文版</a>，如果你想了解点Git的基础命令，我推荐以下博文：<a href="http://huangjunhui.gitcafe.io/2015/04/06/my-new-post/" target="_blank" rel="external">Git常用的基础命令</a>，<a href="http://blog.csdn.net/v123411739/article/details/44071059/" target="_blank" rel="external">史上最全github使用方法：github入门到精通</a>,当然即使你不懂Git的命令，跟着本博文走，也完全没问题。</p>
 <h3 id="安装Node-js">安装Node.js</h3><p>下载并安装<a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面遇到问题，再选择重启。</p>
@@ -43,103 +251,194 @@
 <h3 id="发表一篇文章">发表一篇文章</h3><p>1.在Git Bash执行命令：<code>$ hexo new &quot;my new post&quot;</code><br>2.在<code>E:\hexo\source\_post</code>中打开my-new-post.md，打开方式使用记事本或notepad++。<br>hexo中写文章使用的是Markdown，没接触过的可以看下<a href="http://wowubuntu.com/markdown/#p" target="_blank" rel="external">Markdown语法说明</a>,<a href="http://lutaf.com/markdown-simple-usage.htm" target="_blank" rel="external">一分钟学会Markdown</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: my new post <span class="comment">#可以改成中文的，如“新文章”</span></span><br><span class="line">date: <span class="number">2015</span>-<span class="number">04</span>-<span class="number">08</span> <span class="number">22</span>:<span class="number">56</span>:<span class="number">29</span> <span class="comment">#发表日期，一般不改动</span></span><br><span class="line">categories: blog <span class="comment">#文章文类</span></span><br><span class="line">tags: [博客，文章] <span class="comment">#文章标签，多于一项时用这种格式，只有一项时使用tags: blog</span></span><br><span class="line">---</span><br><span class="line"><span class="comment">#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</span></span><br><span class="line">&lt;!--more--&gt;，在&lt;!--more--&gt;之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。</span><br></pre></td></tr></table></figure></p>
 <p>写完文章后，你可以使用1.<code>$ hexo g</code>生成静态文件。2.<code>$ hexo s</code>在本地预览效果。3.<code>hexo d</code>同步到github，然后使用<a href="http://****.github.io进行访问。" target="_blank" rel="external">http://****.github.io进行访问。</a><br>到现在为止，我们已经搭建起博客，并能写文章了，一个具备基本功能的博客已经实现了。由于本文是博主工作之余写的，比较仓促，难免有错误，欢迎指正。后面的文章将介绍本博客使用到的一些实用的功能，如访问次数，新浪微博秀，RSS，多说评论等，喜欢这些功能的朋友可以继续跟随。</p>
 <p>本文非常详细的介绍了搭建过程，但是如果您还是在搭建的过程中碰到了问题，欢迎您在下面留言探讨。亦或是您觉得博主码文辛苦，想评论鼓励，博主也表示欢迎。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="动机">动机</h2><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、git]]>
-    </summary>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-  </entry>
+
+      
+    </div>
+    <footer>
+      
+        
   
-  <entry>
-    <title><![CDATA[Git常用的基础命令]]></title>
-    <link href="http://yoursite.com/2015/04/06/my-new-post/"/>
-    <id>http://yoursite.com/2015/04/06/my-new-post/</id>
-    <published>2015-04-06T11:52:45.000Z</published>
-    <updated>2015-04-08T15:11:05.957Z</updated>
-    <content type="html"><![CDATA[<h2 id="1-起步">1.起步</h2><h4 id="用户信息">用户信息</h4><p>配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “youname”</span><br><span class="line">$ git config --global user.email “<span class="number">12345</span>@example.com”</span><br></pre></td></tr></table></figure></p>
-<p>如果用了 —global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 —global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。<br><a id="more"></a></p>
-<h2 id="2-GIT基础">2.GIT基础</h2><h4 id="查看配置信息">查看配置信息</h4><p>查看已有的配置信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line">$ git config <span class="operator">-l</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="获取帮助">获取帮助</h4><p>例如想获取config命令的帮助信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">help</span> config </span><br><span class="line">$ git config --help</span><br></pre></td></tr></table></figure></p>
-<h4 id="初始化新仓库">初始化新仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<p>初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。不过目前，仅仅是按照既有的结构框架初始化好了里边所有的文件和目录，但我们还没有开始跟踪管理项目中的任何一个文件。</p>
-<p>如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</p>
-<h4 id="跟踪文件：（将文件加到暂存区域）">跟踪文件：（将文件加到暂存区域）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt</span><br></pre></td></tr></table></figure>
-<h4 id="跟踪全部文件">跟踪全部文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
-<h4 id="提交更新">提交更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m “first version”</span><br></pre></td></tr></table></figure>
-<h4 id="上传（推送）到github">上传（推送）到github</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
-<h4 id="从现有仓库克隆">从现有仓库克隆</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git://github.com/youname/project.git</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:youname/project.git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/youname/project.git</span><br></pre></td></tr></table></figure>
-<h4 id="检查当前文件状态">检查当前文件状态</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
-<h4 id="创建-gitignore文件">创建.gitignore文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch .gitignore</span><br></pre></td></tr></table></figure>
-<h4 id="查看修改之后没有暂存起来的内容">查看修改之后没有暂存起来的内容</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br></pre></td></tr></table></figure>
-<h4 id="移除文件">移除文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm readme.txt</span><br></pre></td></tr></table></figure>
-<h4 id="重命名文件">重命名文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git mv oldname.txt newname.txt</span><br></pre></td></tr></table></figure>
-<h4 id="查看提交历史">查看提交历史</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
-<h4 id="取消暂存">取消暂存</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD readme.txt</span><br></pre></td></tr></table></figure>
-<h4 id="添加远程仓库（远程仓库必须先在github上建好）">添加远程仓库（远程仓库必须先在github上建好）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add [shortname] [url]</span><br></pre></td></tr></table></figure>
-<h4 id="实例：">实例：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:youname/yourRepo.git</span><br></pre></td></tr></table></figure>
-<h4 id="推送数据到仓库">推送数据到仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push [remote-name] [branch-name]</span><br></pre></td></tr></table></figure>
-<p>如果要把本地的 master 分支推送到origin服务器上（再次说明下，克隆操作会自动使用默认的master 和origin 名字），可以运行下面的命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure></p>
-<h4 id="从远程仓库抓取数据">从远程仓库抓取数据</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch [remote-name]</span><br></pre></td></tr></table></figure>
-<p>碰到远端仓库服务器迁移，或者原来的克隆镜像不再使用，又或者某个参与者不再贡献代码，那么需要移除对应的远端仓库<br>远程仓库的删除<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure></p>
-<h4 id="远程仓库重命名(此处命名的是上文添加远程仓库中的shortname)">远程仓库重命名(此处命名的是上文添加远程仓库中的shortname)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rename origin origin2</span><br></pre></td></tr></table></figure>
-<h4 id="自动补全">自动补全</h4><p>输入命令后按tab键，就会看到列出所有匹配的可用命令建议：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co&lt;tab&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="3-GIT分支">3.GIT分支</h2><h4 id="创建一个名为“testing”的分支">创建一个名为“testing”的分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch testing</span><br></pre></td></tr></table></figure>
-<h4 id="切换到“testing”分支(默认为master分支)">切换到“testing”分支(默认为master分支)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout testing</span><br></pre></td></tr></table></figure>
-<h4 id="新建并切换到该分支">新建并切换到该分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b iss53</span><br></pre></td></tr></table></figure>
-<h4 id="这条命令相当于执行下面这两条命令">这条命令相当于执行下面这两条命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch iss53</span><br><span class="line">$ git checkout iss53</span><br></pre></td></tr></table></figure>
-<h4 id="删除hotfix分支（如果该分支还未被合并则会提示错误，因为这样会丢失数据）">删除hotfix分支（如果该分支还未被合并则会提示错误，因为这样会丢失数据）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="operator">-d</span> hotfix</span><br></pre></td></tr></table></figure>
-<h4 id="强制删除hotfix分支（强制删除，不会提示错误）">强制删除hotfix分支（强制删除，不会提示错误）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D hotfix</span><br></pre></td></tr></table></figure>
-<h4 id="合并iss53分支（先切换到master分支）">合并iss53分支（先切换到master分支）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git merge iss53</span><br></pre></td></tr></table></figure>
-<h4 id="查看当前所有分支">查看当前所有分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-<h4 id="查看各个分支最后一个提交对象的信息">查看各个分支最后一个提交对象的信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -v</span><br></pre></td></tr></table></figure>
-<h4 id="查看已经与当前分支合并的分支（已经合并的查出来后可以删掉）">查看已经与当前分支合并的分支（已经合并的查出来后可以删掉）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --merge</span><br></pre></td></tr></table></figure>
-<h4 id="查看未与当前分支合并的分支">查看未与当前分支合并的分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --no-merged</span><br></pre></td></tr></table></figure>
-<h4 id="同步远程服务器数据到本地">同步远程服务器数据到本地</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br></pre></td></tr></table></figure>
-<h4 id="从新添加的远程仓库下载数据">从新添加的远程仓库下载数据</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add teamone git://git.team1.ourcompany.com</span><br><span class="line">$ git fetch teamone</span><br></pre></td></tr></table></figure>
-<h4 id="分化一个新的分支(使用这个命令会从服务器上下载master最新的版本，所以如果当前本地版本不是最新的，新的分支和本地分支会不同)">分化一个新的分支(使用这个命令会从服务器上下载master最新的版本，所以如果当前本地版本不是最新的，新的分支和本地分支会不同)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b <span class="built_in">test</span>1 origin/master</span><br></pre></td></tr></table></figure>
-<p>假如你用这个新的分支进行git push，并且通过了合并，那么会在远程仓库建立一个新的同名分支</p>
-<h4 id="删除该分支的方法">删除该分支的方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :<span class="built_in">test</span>1</span><br></pre></td></tr></table></figure>
-<h4 id="分支的衍合：将test1分支衍合到master主分支">分支的衍合：将test1分支衍合到master主分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout <span class="built_in">test</span>1</span><br><span class="line">$ git rebase master</span><br></pre></td></tr></table></figure>
-<h4 id="另一种方法，直接衍合，不用再先切换到test1">另一种方法，直接衍合，不用再先切换到test1</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase master <span class="built_in">test</span>1</span><br></pre></td></tr></table></figure>
-<h4 id="快进master分支">快进master分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git merge client</span><br></pre></td></tr></table></figure>
-<p>衍合：一旦分支中的提交对象发布到公共仓库，就千万不要对该分支进行衍合操作。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="1-起步">1.起步</h2><h4 id="用户信息">用户信息</h4><p>配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “youname”</span><br><span class="line">$ git config --global user.email “<span class="number">12345</span>@example.com”</span><br></pre></td></tr></table></figure></p>
-<p>如果用了 —global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 —global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。<br>]]>
-    
-    </summary>
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-      <category term="git" scheme="http://yoursite.com/categories/git/"/>
-    
-  </entry>
+  <div class="categories">
+    <a href="/categories/hexo/">hexo</a>
+  </div>
+
+        
   
-  <entry>
-    <title><![CDATA[开始我的hexo博客]]></title>
-    <link href="http://yoursite.com/2015/04/06/hello-world/"/>
-    <id>http://yoursite.com/2015/04/06/hello-world/</id>
-    <published>2015-04-06T10:52:45.000Z</published>
-    <updated>2015-04-07T13:31:40.088Z</updated>
-    <content type="html"><![CDATA[<p>早就听说过github这个高大上的东西，也进过github看过，但因自己的英语水平有限，在满是英文的github页面上逗留了一会便关掉页面。</p>
-<p></p><p><br>一个月前，在家无所事事，偶然机会看到一篇关于建立个人博客的教程，自己虽然在csdn上有一个博客，但是经常看着各种大神高大尚的个人博客，内心不禁来了兴头，决定搞一个个人博客。<br><a id="more"></a><br>因为我看到的建站教程是基于github pages，因此不得不开始了自己的github之旅。有了自己的github后便跟着教程一步步跟着学，期间也搜索过各式各样的github快速入门教程，很快便熟悉了基本的操作。因为教程年代久远，因此肯定有七的八的问题，通过找资料，最终都解决了，但是成品惨不忍睹—太丑了，只能舍弃。之后我还通读了Pro Git的前三章，深化了自己对git的认识，本来打算通读Pro Git，但后来发现只有前三章的内容是常用的，因此便只读了前三章。</p>
-<p></p><p><br>前几天，看到了自己同学的个人博客，感觉还不错，很是喜欢，便向其索要教程，之后便跟着zippera的教程一步一步走，终于是成功，博客的样子还不错，简洁大方，而hexo提供的本地预览功能也让我爱不释手，写博文使用的markdown也比较容易上手，因此便决定将此站定为自己的个人博客，希望能成为对技术不断学习的动力。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>早就听说过github这个高大上的东西，也进过github看过，但因自己的英语水平有限，在满是英文的github页面上逗留了一会便关掉页面。</p>
-<p><p><br>一个月前，在家无所事事，偶然机会看到一篇关于建立个人博客的教程，自己虽然在csdn上有一个博客，但是经常看着各种大神高大尚的个人博客，内心不禁来了兴头，决定搞一个个人博客。<br>]]>
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
     
-    </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    <a href="/2015/04/06/my-new-post/" class="alignright next" >下一页</a>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-  </entry>
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+	
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2015/04/09/hexo-guide/" data-title="使用Hexo搭建个人博客(基于hexo3.0)" data-url="http://yoursite.com/2015/04/09/hexo-guide/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chillax"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+
   
-</feed>
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：黄俊辉</li>
+<li>外文：chillax | grace</li>
+<li>现状：上海实习ing</li>
+<li>职位：Java开发工程师</li>
+<li>QQ  ：123411739</li>
+<li>邮箱：jhhuang1993@foxmail.com</li>
+<li>访问：<strong id="counterValue"></strong> 次</li>
+</ul>
+</div>
+
+
+
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/git/">git</a><small>1</small></li>
+  
+    <li><a href="/categories/hexo/">hexo</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/git/" style="font-size: 10px;">git</a><a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="140" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=140&fansRow=2&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1923610190&verifier=6af5ad6a&colors=ffffff,ffffff,000000,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/v123411739" title="Grace's Blog">Grace</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+Powered by <a href="http://hexo.io/">hexo</a> and Theme by <a href="https://github.com/zippera/lightum">Lightum</a> @2015 huangjunhui
+</section>
+
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/counter.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:20px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+<a href="https://github.com/huangjunhui" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://i1.tietuku.com/21043e8ce4655323.png" alt="Fork me on GitHub"></a>
