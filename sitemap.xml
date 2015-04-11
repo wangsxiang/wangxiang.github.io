@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2015/04/09/hexo-guide-2/</loc>
+    <lastmod>2015-04-11T12:14:10.391Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2015/04/06/hello-world/</loc>
+    <lastmod>2015-04-11T05:05:32.566Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2015/04/09/hexo-guide/</loc>
+    <lastmod>2015-04-10T16:15:02.143Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2015/04/06/my-new-post/</loc>
+    <lastmod>2015-04-10T16:01:10.465Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/404.html</loc>
+    <lastmod>2015-04-07T03:18:08.502Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    <lastmod>2015-04-06T13:04:27.090Z</lastmod>
+  </url>
+  
+</urlset>
