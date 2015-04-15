@@ -3,9 +3,9 @@
   <title><![CDATA[Chillax's blog]]></title>
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://opiece.me/"/>
   <updated>2015-04-11T12:14:10.391Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://opiece.me/</id>
   
   <author>
     <name><![CDATA[huangjunhui]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[hexo搭建博客的实用功能(上)(基于hexo3.0)]]></title>
-    <link href="http://yoursite.com/2015/04/09/hexo-guide-2/"/>
-    <id>http://yoursite.com/2015/04/09/hexo-guide-2/</id>
+    <link href="http://opiece.me/2015/04/09/hexo-guide-2/"/>
+    <id>http://opiece.me/2015/04/09/hexo-guide-2/</id>
     <published>2015-04-09T15:57:37.000Z</published>
     <updated>2015-04-11T12:14:10.391Z</updated>
     <content type="html"><![CDATA[<h2 id="前言">前言</h2><p>在上一节中，我们已经学会了使用hexo搭建博客，并且可以使用hexo发布博文。在这一节中，将介绍一些实用的功能，有了这些功能，博客系统看起来会更好用、好看和充实。<br><a id="more"></a></p>
@@ -43,16 +43,16 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/tags/hexo/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/categories/hexo/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[使用Hexo搭建个人博客(基于hexo3.0)]]></title>
-    <link href="http://yoursite.com/2015/04/09/hexo-guide/"/>
-    <id>http://yoursite.com/2015/04/09/hexo-guide/</id>
+    <link href="http://opiece.me/2015/04/09/hexo-guide/"/>
+    <id>http://opiece.me/2015/04/09/hexo-guide/</id>
     <published>2015-04-09T05:32:09.000Z</published>
     <updated>2015-04-12T01:49:53.016Z</updated>
     <content type="html"><![CDATA[<h2 id="动机">动机</h2><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着<a href="http://zipperary.com/" target="_blank" rel="external">zippera</a>的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因如下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。<br><a id="more"></a></p>
@@ -85,16 +85,16 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/tags/hexo/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/categories/hexo/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Git常用的基础命令]]></title>
-    <link href="http://yoursite.com/2015/04/06/git-basic-commands/"/>
-    <id>http://yoursite.com/2015/04/06/git-basic-commands/</id>
+    <link href="http://opiece.me/2015/04/06/git-basic-commands/"/>
+    <id>http://opiece.me/2015/04/06/git-basic-commands/</id>
     <published>2015-04-06T11:52:45.000Z</published>
     <updated>2015-04-10T16:01:10.465Z</updated>
     <content type="html"><![CDATA[<h2 id="起步">起步</h2><p><strong>用户信息</strong><br>配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “youname”</span><br><span class="line">$ git config --global user.email “<span class="number">12345</span>@example.com”</span><br></pre></td></tr></table></figure></p>
@@ -149,16 +149,16 @@
     
     </summary>
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="http://opiece.me/tags/git/"/>
     
-      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+      <category term="git" scheme="http://opiece.me/categories/git/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[开始我的hexo博客]]></title>
-    <link href="http://yoursite.com/2015/04/06/start-my-hexo/"/>
-    <id>http://yoursite.com/2015/04/06/start-my-hexo/</id>
+    <link href="http://opiece.me/2015/04/06/start-my-hexo/"/>
+    <id>http://opiece.me/2015/04/06/start-my-hexo/</id>
     <published>2015-04-06T10:52:46.000Z</published>
     <updated>2015-04-11T15:22:45.759Z</updated>
     <content type="html"><![CDATA[<h2 id="前言">前言</h2><p>早就听说过github这个高大上的东西，也进过github看过，但因自己的英语水平有限，在满是英文的github页面上逗留了一会便关掉页面。<br>一个月前，在家无所事事，偶然机会看到一篇关于建立个人博客的教程，自己虽然在csdn上有一个博客，但是经常看着各种大神高大尚的个人博客，内心不禁来了兴头，决定搞一个个人博客。<br><a id="more"></a></p>
@@ -169,9 +169,9 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/tags/hexo/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://opiece.me/categories/hexo/"/>
     
   </entry>
   
