@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://opiece.me/"/>
-  <updated>2015-04-16T11:00:48.982Z</updated>
+  <updated>2015-04-16T11:06:11.249Z</updated>
   <id>http://opiece.me/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://opiece.me/2015/04/16/site-search-by-swiftype/"/>
     <id>http://opiece.me/2015/04/16/site-search-by-swiftype/</id>
     <published>2015-04-16T10:56:17.000Z</published>
-    <updated>2015-04-16T11:00:48.982Z</updated>
+    <updated>2015-04-16T11:06:11.249Z</updated>
     <content type="html"><![CDATA[<h3 id="前言">前言</h3><p>首先，以下的内容是基于最新的swifytpe的教程，应该是2.0.0。<br>站内搜索顾名思义就是将范围限定在你的网站内，以此范围进行关键字搜索。<br>常见的站内搜索是google和baidu的，但是现在google需要翻墙，因此不予考虑，所以主要考虑百度的，我自己试过百度的站内搜索，感觉不是很好用，主要是新博客，收录的内容很少速度很慢。后来找到了一款名为<code>swiftype</code>的工具，感觉还不错，就使用了<code>swiftype</code>进行站内搜索。<br><a id="more"></a></p>
 <h3 id="效果图">效果图</h3><p>首先，看一下<code>swiftype</code>应用在博客内的效果。</p>
 <p>搜索框界面</p>
@@ -34,8 +34,8 @@
 <p>7.进入最后一项(activate)，找到右下角的<code>ACTIVATE SWIFTYPE</code>按钮，点击即可，此时你已经完成了<code>swiftype</code>网站上的所有配置。</p>
 <p>8.在<code>E:\hexo\themes\lightum\layout\_partial\after_footer.ejs</code>中添加第5步复制的代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">  (<span class="keyword">function</span>(w,d,t,u,n,s,e)&#123;w[<span class="string">'SwiftypeObject'</span>]=n;w[n]=w[n]||<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  (w[n].q=w[n].q||[]).push(arguments);&#125;;s=d.createElement(t);</span><br><span class="line">  e=d.getElementsByTagName(t)[<span class="number">0</span>];s.async=<span class="number">1</span>;s.src=u;e.parentNode.insertBefore(s,e);</span><br><span class="line">  &#125;)(window,document,<span class="string">'script'</span>,<span class="string">'//s.swiftypecdn.com/install/v2/st.js'</span>,<span class="string">'_st'</span>);</span><br><span class="line"></span><br><span class="line">  _st(<span class="string">'install'</span>,<span class="string">'gngcYKRA61Ss_pfLd6uz'</span>,<span class="string">'2.0.0'</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>9.在<code>E:\hexo\themes\lightum\layout\_widget\search.ejs</code>中，修改代码如下，如果的主题跟我不同，那就在你的搜索框的<code>input</code>属性上加入<code>id=&quot;chillax-search-input&quot;</code>，记得将id改成第6步记下来的id。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"search"</span>&gt;</span><br><span class="line">  &lt;form&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"search"</span> id=<span class="string">"chillax-search-input"</span> placeholder=<span class="string">"&lt;%= __('search') %&gt;"</span>&gt;</span><br><span class="line">  &lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="总结：">总结：</h3><p><code>swiftype</code>在搜索框这一栏提供了多种选择，用户可以根据自己的需求选择合适的。<br><code>swiftype</code>的优点：<br>1.效果出现的很快，部署完所有东西后，很快就能进行站内搜索。<br>2.操作简单，方便。</p>
-<p>原创文章，转载请注明出处。</p>
+<h3 id="总结">总结</h3><p><code>swiftype</code>在搜索框这一栏提供了多种选择，用户可以根据自己的需求选择合适的。<br><code>swiftype</code>的优点：<br>1.效果出现的很快，部署完所有东西后，很快就能进行站内搜索。<br>2.操作简单，方便。<br>如有任何疑问，欢迎留言讨论。</p>
+<font color="red" size="5"><strong>原创文章，转载请注明出处。</strong></font>
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="前言">前言</h3><p>首先，以下的内容是基于最新的swifytpe的教程，应该是2.0.0。<br>站内搜索顾名思义就是将范围限定在你的网站内，以此范围进行关键字搜索。<br>常见的站内搜索是google和baidu的，但是现在google需要翻墙，因此不予考虑，所以主要考虑百度的，我自己试过百度的站内搜索，感觉不是很好用，主要是新博客，收录的内容很少速度很慢。后来找到了一款名为<code>swiftype</code>的工具，感觉还不错，就使用了<code>swiftype</code>进行站内搜索。<br>]]>
