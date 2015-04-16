@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://opiece.me/"/>
-  <updated>2015-04-16T11:07:20.371Z</updated>
+  <updated>2015-04-16T11:20:39.853Z</updated>
   <id>http://opiece.me/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://opiece.me/2015/04/16/site-search-by-swiftype/"/>
     <id>http://opiece.me/2015/04/16/site-search-by-swiftype/</id>
     <published>2015-04-16T10:56:17.000Z</published>
-    <updated>2015-04-16T11:07:20.371Z</updated>
+    <updated>2015-04-16T11:20:39.853Z</updated>
     <content type="html"><![CDATA[<h3 id="前言">前言</h3><p>首先，以下的内容是基于最新的swifytpe的教程，应该是2.0.0。<br>站内搜索顾名思义就是将范围限定在你的网站内，以此范围进行关键字搜索。<br>常见的站内搜索是google和baidu的，但是现在google需要翻墙，因此不予考虑，所以主要考虑百度的，我自己试过百度的站内搜索，感觉不是很好用，主要是新博客，收录的内容很少速度很慢。后来找到了一款名为<code>swiftype</code>的工具，感觉还不错，就使用了<code>swiftype</code>进行站内搜索。<br><a id="more"></a></p>
 <h3 id="效果图">效果图</h3><p>首先，看一下<code>swiftype</code>应用在博客内的效果。</p>
 <p>搜索框界面</p>
@@ -48,9 +48,7 @@
     
       <category term="站内搜索" scheme="http://opiece.me/tags/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/"/>
     
-      <category term="hexo" scheme="http://opiece.me/categories/hexo/"/>
-    
-      <category term="swiftype" scheme="http://opiece.me/categories/hexo/swiftype/"/>
+      <category term="swiftype" scheme="http://opiece.me/categories/swiftype/"/>
     
   </entry>
   
