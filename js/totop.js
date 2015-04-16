@@ -1,12 +1,12 @@
 (function($) { 
 	// When to show the scroll link
-	// higher number = scroll link appears further down the page   
+	// higher number = scroll link appears further down the page：显示返回顶部的位置
 	var upperLimit = 1000;
 	
 	// Our scroll link element
 	var scrollElem = $('#totop');
    
-	// Scroll to top speed
+	// Scroll to top speed：回滚速度
 	var scrollSpeed = 500;
    
 	// Show and hide the scroll to top link based on scroll position   
