@@ -670,9 +670,8 @@ article footer .addthis iframe {
 }
 #sidebar .search {
   margin-bottom: 30px;
-input
 }
-#sidebar height 40px {
+#sidebar .search input {
   background: #fff;
   font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
   font-style: italic;
@@ -685,7 +684,7 @@ input
   box-sizing: border-box;
   color: #777;
 }
-#sidebar height 40px:focus {
+#sidebar .search input:focus {
   color: #000;
 }
 #sidebar .tag small {
