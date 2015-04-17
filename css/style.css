@@ -596,6 +596,104 @@ article footer .addthis iframe {
   padding-left: 10px;
   font-family: FontAwesome;
 }
+#mainst {
+  margin: 1em 0 0;
+  line-height: line-height0.3;
+}
+@media tablet {
+  #mainst {
+    margin: 2em 0 0;
+    width: 75%;
+    float: left;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+  }
+}
+#mainst section.post {
+  background: color-section;
+  margin-bottom: 0.125em;
+}
+#mainst section.post a {
+  display: block;
+  border-left: 0.5em solid color-gray;
+  -webkit-transition: border-left 0.45s;
+  -moz-transition: border-left 0.45s;
+  -o-transition: border-left 0.45s;
+  -ms-transition: border-left 0.45s;
+  transition: border-left 0.45s;
+  padding: 0.5em;
+}
+@media mini {
+  #mainst section.post a {
+    padding: 1em;
+  }
+}
+#mainst section.post a:hover {
+  border-left: 0.5em solid color-theme;
+}
+#mainst section.post a h1 {
+  color: color-blue;
+  line-height: line-height0.5;
+}
+#mainst section.post a p {
+  color: #000;
+}
+#mainst section.post a time {
+  color: #000;
+  display: block;
+  margin: 0.5em 0;
+  font-size: 0.5em;
+}
+#page-navs {
+  background: color-section;
+  text-align: center;
+  overflow: hidden;
+}
+#page-navs a,
+#page-navs span {
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+#page-navs a {
+  color: color-blue;
+}
+#page-navs a:hover {
+  background: color-gray;
+  color: color-theme;
+}
+#page-navs .prev {
+  float: left;
+  border-left: 0.5em solid color-gray;
+  -webkit-transition: border-left 0.5s;
+  -moz-transition: border-left 0.5s;
+  -o-transition: border-left 0.5s;
+  -ms-transition: border-left 0.5s;
+  transition: border-left 0.5s;
+}
+#page-navs .prev:hover {
+  border-left: 0.5em solid color-theme;
+}
+#page-navs .next {
+  float: right;
+}
+#page-navs .page-number {
+  display: none;
+}
+@media mini {
+  #page-navs .page-number {
+    display: inline-block;
+  }
+}
+#page-navs .current {
+  color: #00f;
+  font-weight: bold;
+}
+#page-navs .space {
+  color: color-blue;
+}
 .archive-title {
   color: #777;
   font-weight: normal;
