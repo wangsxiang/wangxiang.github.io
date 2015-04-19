@@ -801,15 +801,15 @@ article footer .addthis iframe {
   line-height: 28px;
 }
 .author-logo {
-  width: 6.875em;
-  height: 6.875em;
+  width: 13.75em;
+  height: 13.75em;
   margin: 0 auto;
   background: no-repeat url("../imgs/author.png") left top;
-  -webkit-background-size: 6.875em 6.875em;
-  -moz-background-size: 6.875em 6.875em;
-  background-size: 6.875em 6.875em;
-  -webkit-border-radius: 3.4375em;
-  border-radius: 3.4375em;
+  -webkit-background-size: 13.75em 13.75em;
+  -moz-background-size: 13.75em 13.75em;
+  background-size: 13.75em 13.75em;
+  -webkit-border-radius: 6.875em;
+  border-radius: 6.875em;
   -webkit-transition: -webkit-transform 2s ease-out;
   -moz-transition: -moz-transform 2s ease-out;
   -o-transition: -o-transform 2s ease-out;
