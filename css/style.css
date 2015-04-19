@@ -844,8 +844,7 @@ article footer .addthis iframe {
 }
 .info-logo {
   font-family: font-custom-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: ;
   font-size: font-size50;
   line-height: 1.3em;
   width: 90%;
@@ -902,8 +901,7 @@ article footer .addthis iframe {
 .social-list a[title="facebook"]::before,
 .social-list a[title="zhihu"]::before {
   font-family: font-icon-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: ;
 }
 .social-list a[title="weibo"]::before {
   content: "\f18a";
