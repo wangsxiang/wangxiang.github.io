@@ -102,6 +102,44 @@ a:hover {
     margin-right: 0;
   }
 }
+/* Public style */
+* {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+::-webkit-input-placeholder {
+  color: color-white;
+  padding: 2px 0 0 4px;
+}
+::-moz-placeholder {
+  color: color-white;
+  padding: 2px 0 0 4px;
+}
+:-ms-input-placeholder {
+  color: color-white;
+  padding: 2px 0 0 4px;
+}
+::-webkit-input-placeholder::before {
+  font-family: font-icon-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f002";
+  padding-right: 4px;
+}
+::-moz-placeholder:before {
+  font-family: font-icon-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f002";
+  padding-right: 4px;
+}
+:-ms-input-placeholder::before {
+  font-family: font-icon-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f002";
+  padding-right: 4px;
+}
 #header {
   text-shadow: 0 0 1px #fff;
   margin: 50px auto;
@@ -844,7 +882,8 @@ article footer .addthis iframe {
 }
 .info-logo {
   font-family: font-custom-family;
-  -webkit-font-smoothing: ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: font-size50;
   line-height: 1.3em;
   width: 90%;
@@ -901,7 +940,8 @@ article footer .addthis iframe {
 .social-list a[title="facebook"]::before,
 .social-list a[title="zhihu"]::before {
   font-family: font-icon-family;
-  -webkit-font-smoothing: ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .social-list a[title="weibo"]::before {
   content: "\f18a";
