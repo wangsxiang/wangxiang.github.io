@@ -69,7 +69,7 @@ a:hover {
   clear: both;
 }
 .inner {
-  width: 1200px;
+  width: page-width;
   margin: 0 auto;
 }
 @media screen and (max-width: 1260px) {
@@ -102,38 +102,206 @@ a:hover {
     margin-right: 0;
   }
 }
-#header {
-  text-shadow: 0 0 1px #fff;
-  margin: 50px auto;
+body >header {
+  width: 100%;
+  -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+  box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+  background: #ea6753;
+  color: #fff;
+  padding: 1em 0 0.8em;
 }
-#header a {
-  color: #999;
+@media tablet {
+  body >header {
+    padding: 1.8em 0 1.5em;
+  }
 }
-#header a:hover {
-  color: #0085ff;
-  text-decoration: none;
+body >header >div {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
-#header h1 {
-  font-weight: normal;
-  font-size: 3em;
-  line-height: 1;
+@media tablet {
+  body >header >div {
+    width: 93%;
+  }
 }
-#header h2 {
-  font-weight: normal;
-  font-size: 1.5em;
-  line-height: 1;
-  margin-top: 10px;
+body >header a {
+  display: block;
+  color: #fff;
 }
-#header #main-nav {
-  font-family: Georgia, 'Times New Roman', Times, 'Songti SC', SimSun, serif;
-  line-height: 2.5em;
-}
-#header #main-nav ul {
-  list-style: none;
-}
-#header #main-nav ul li {
+#imglogo {
   float: left;
-  margin-left: 30px;
+  width: 4em;
+  height: 4em;
+}
+@media mini {
+  #imglogo {
+    width: 5em;
+  }
+}
+@media tablet {
+  #imglogo {
+    width: 5.5em;
+  }
+}
+#imglogo img {
+  width: 4em;
+}
+@media mini {
+  #imglogo img {
+    width: 5em;
+  }
+}
+@media tablet {
+  #imglogo img {
+    width: 5.5em;
+  }
+}
+#textlogo {
+  float: left;
+  width: 75%;
+  margin-left: 0.5em;
+}
+#textlogo h1.site-name {
+  width: 86%;
+  font-family: font-custom-family;
+  font-size: font-size100;
+  line-height: line-height;
+  -webkit-font-smoothing: ;
+}
+@media mini {
+  #textlogo h1.site-name {
+    font-size: font-size140;
+  }
+}
+@media tablet {
+  #textlogo h1.site-name {
+    font-size: font-size180;
+  }
+}
+#textlogo h2.blog-motto {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+@media mini {
+  #textlogo h2.blog-motto {
+    font-size: font-size;
+  }
+}
+@media tablet {
+  #textlogo h2.blog-motto {
+    font-size: font-size10;
+  }
+}
+.navbar {
+  position: absolute;
+  width: 2em;
+  right: 0em;
+  top: 1em;
+  padding: 0.5em;
+}
+@media tablet {
+  .navbar {
+    display: none;
+  }
+}
+.navbutton::before {
+  font-family: font-icon-family;
+  -webkit-font-smoothing: ;
+  content: "\f0c9";
+}
+.navmobile::before {
+  padding-left: 1em;
+}
+header nav {
+  float: left;
+  width: 100%;
+  font-size: font-size12.5;
+  padding-top: 0.5em;
+  max-height: 0.01em;
+  -webkit-transition: max-height 1s ease-out;
+  -moz-transition: max-height 1s ease-out;
+  -o-transition: max-height 1s ease-out;
+  -ms-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+}
+@media phone {
+  header nav {
+    width: 50%;
+  }
+}
+@media tablet {
+  header nav {
+    float: right;
+    width: auto;
+    margin-top: 1em;
+    max-height: none;
+  }
+}
+@media tablet {
+  header nav ul {
+    float: right;
+  }
+}
+@media tablet {
+  header nav ul li {
+    float: left;
+  }
+}
+header nav ul li a {
+  padding: 0.2em 0 0.2em 1em;
+}
+@media tablet {
+  header nav ul li a {
+    padding: 0.2em 1.5em;
+  }
+}
+header nav ul li a:hover {
+  background: #dd2c11;
+  color: #e9cd4c;
+}
+.shownav {
+  max-height: 40em;
+}
+.search {
+  padding: 0.1em 0 0 1em;
+}
+.search input {
+  line-height: line-height0.2;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  width: 80%;
+  padding-left: 0.5em;
+}
+@media tablet {
+  .search input {
+    width: 8em;
+    -webkit-transition: 0.5s width;
+    -moz-transition: 0.5s width;
+    -o-transition: 0.5s width;
+    -ms-transition: 0.5s width;
+    transition: 0.5s width;
+  }
+  .search input:focus {
+    width: 15em;
+  }
+}
+.search label {
+  display: none;
+}
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
 }
 article {
   -webkit-box-shadow: 0 1px 2px #bbb;
@@ -657,7 +825,7 @@ article footer .addthis iframe {
 }
 #page-navs a:hover {
   background: color-grey;
-  color: color-theme;
+  color: #ea6753;
 }
 #page-navs .prev {
   float: left;
@@ -849,7 +1017,7 @@ article footer .addthis iframe {
   line-height: 1.3em;
   width: 90%;
   margin: 0 auto;
-  color: color-white;
+  color: #fff;
 }
 @media mini {
   .info-logo {
