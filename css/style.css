@@ -69,7 +69,7 @@ a:hover {
   clear: both;
 }
 .inner {
-  width: page-width;
+  width: 1200px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1260px) {
@@ -92,6 +92,9 @@ a:hover {
     float: none;
   }
 }
+#wrapper {
+  margin-top: 30px;
+}
 @media screen and (max-width: 1260px) {
   #wrapper {
     margin-right: 300px;
@@ -110,7 +113,7 @@ body >header {
   color: #fff;
   padding: 1em 0 0.8em;
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   body >header {
     padding: 1.8em 0 1.5em;
   }
@@ -121,7 +124,7 @@ body >header >div {
   position: relative;
   overflow: hidden;
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   body >header >div {
     width: 93%;
   }
@@ -131,16 +134,17 @@ body >header a {
   color: #fff;
 }
 #imglogo {
+  margin-left: 35px;
   float: left;
   width: 4em;
   height: 4em;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   #imglogo {
     width: 5em;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   #imglogo {
     width: 5.5em;
   }
@@ -148,12 +152,12 @@ body >header a {
 #imglogo img {
   width: 4em;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   #imglogo img {
     width: 5em;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   #imglogo img {
     width: 5.5em;
   }
@@ -166,32 +170,32 @@ body >header a {
 #textlogo h1.site-name {
   width: 86%;
   font-family: font-custom-family;
-  font-size: font-size100;
-  line-height: line-height;
+  font-size: 200%;
+  line-height: 1.5;
   -webkit-font-smoothing: ;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    font-size: font-size140;
+    font-size: 240%;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
-    font-size: font-size180;
+    font-size: 280%;
   }
 }
 #textlogo h2.blog-motto {
   font-size: 0.7em;
   font-weight: normal;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   #textlogo h2.blog-motto {
-    font-size: font-size;
+    font-size: 100%;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   #textlogo h2.blog-motto {
-    font-size: font-size10;
+    font-size: 110%;
   }
 }
 .navbar {
@@ -201,7 +205,7 @@ body >header a {
   top: 1em;
   padding: 0.5em;
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   .navbar {
     display: none;
   }
@@ -217,7 +221,7 @@ body >header a {
 header nav {
   float: left;
   width: 100%;
-  font-size: font-size12.5;
+  font-size: 112.5%;
   padding-top: 0.5em;
   max-height: 0.01em;
   -webkit-transition: max-height 1s ease-out;
@@ -226,12 +230,12 @@ header nav {
   -ms-transition: max-height 1s ease-out;
   transition: max-height 1s ease-out;
 }
-@media phone {
+@media only screen and (min-width: 568px) {
   header nav {
     width: 50%;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   header nav {
     float: right;
     width: auto;
@@ -239,12 +243,15 @@ header nav {
     max-height: none;
   }
 }
-@media tablet {
+header nav ul {
+  list-style: none;
+}
+@media only screen and (min-width: 1024px) {
   header nav ul {
     float: right;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   header nav ul li {
     float: left;
   }
@@ -252,7 +259,7 @@ header nav {
 header nav ul li a {
   padding: 0.2em 0 0.2em 1em;
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   header nav ul li a {
     padding: 0.2em 1.5em;
   }
@@ -263,33 +270,6 @@ header nav ul li a:hover {
 }
 .shownav {
   max-height: 40em;
-}
-.search {
-  padding: 0.1em 0 0 1em;
-}
-.search input {
-  line-height: line-height0.2;
-  border: 1px solid #fff;
-  color: #fff;
-  background: transparent;
-  width: 80%;
-  padding-left: 0.5em;
-}
-@media tablet {
-  .search input {
-    width: 8em;
-    -webkit-transition: 0.5s width;
-    -moz-transition: 0.5s width;
-    -o-transition: 0.5s width;
-    -ms-transition: 0.5s width;
-    transition: 0.5s width;
-  }
-  .search input:focus {
-    width: 15em;
-  }
-}
-.search label {
-  display: none;
 }
 .animated {
   -webkit-animation-fill-mode: both;
@@ -306,7 +286,7 @@ header nav ul li a:hover {
 article {
   -webkit-box-shadow: 0 1px 2px #bbb;
   box-shadow: 0 1px 2px #bbb;
-  background: #fff;
+  background: #fafafa;
 }
 article strong {
   font-weight: bolder;
@@ -730,7 +710,7 @@ article footer .addthis iframe {
 }
 #comment {
   padding: 20px;
-  background: #fff;
+  background: #fafafa;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 50px;
@@ -782,6 +762,7 @@ article footer .addthis iframe {
   content: '\f07b';
 }
 .archive {
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 .archive article {
@@ -850,6 +831,7 @@ article footer .addthis iframe {
 }
 #sidebar {
   width: 270px;
+  margin-top: 30px;
   line-height: 1.8em;
 }
 @media screen and (max-width: 900px) {
@@ -859,7 +841,7 @@ article footer .addthis iframe {
   }
 }
 #sidebar .widget {
-  background: #fff;
+  background: #fafafa;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 30px;
@@ -896,7 +878,7 @@ article footer .addthis iframe {
   margin-bottom: 30px;
 }
 #sidebar .search input {
-  background: #fff;
+  background: #fafafa;
   font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
   font-style: italic;
   font-size: 1em;
@@ -954,12 +936,12 @@ article footer .addthis iframe {
   -moz-background-size: 5px auto;
   background-size: 5px auto;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   #authorInfo {
     padding-top: 0.5em;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   #authorInfo {
     padding-top: 1em;
   }
@@ -991,13 +973,13 @@ article footer .addthis iframe {
   -ms-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   .author-logo {
     margin: 0 1em 0 0;
     float: left;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   .author-logo {
     float: none;
     width: 9.166666666666666em;
@@ -1013,13 +995,13 @@ article footer .addthis iframe {
 .info-logo {
   font-family: font-custom-family;
   -webkit-font-smoothing: ;
-  font-size: font-size50;
+  font-size: 150%;
   line-height: 1.3em;
   width: 90%;
   margin: 0 auto;
   color: #fff;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   .info-logo {
     margin: 4.5em 0 2em 0;
     float: left;
@@ -1033,7 +1015,7 @@ article footer .addthis iframe {
   float: left;
   text-align: center;
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   .social-list {
     float: none;
     width: auto;
@@ -1044,17 +1026,17 @@ article footer .addthis iframe {
 .social-list a {
   display: inline-block;
   color: #343434;
-  font-size: font-size80;
+  font-size: 180%;
   margin: 0.5em;
 }
-@media mini {
+@media only screen and (min-width: 768px) {
   .social-list a {
     float: none;
     margin: 0;
     padding: 0.3em;
   }
 }
-@media tablet {
+@media only screen and (min-width: 1024px) {
   .social-list a {
     float: none;
     padding: 0.3em;
