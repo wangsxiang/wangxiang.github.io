@@ -109,7 +109,7 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: #ea6753;
+  background: #2ca6cb;
   color: #fff;
   padding: 1em 0 0.8em;
 }
@@ -265,7 +265,7 @@ header nav ul li a {
   }
 }
 header nav ul li a:hover {
-  background: #dd2c11;
+  background: #1b7f9e;
   color: #e9cd4c;
 }
 .shownav {
@@ -806,7 +806,7 @@ article footer .addthis iframe {
 }
 #page-navs a:hover {
   background: color-grey;
-  color: #ea6753;
+  color: #2ca6cb;
 }
 #page-navs .prev {
   float: left;
