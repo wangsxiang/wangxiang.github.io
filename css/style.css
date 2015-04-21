@@ -1073,7 +1073,7 @@ article footer .addthis iframe {
   margin-bottom: 50px;
   font: 0.9em/1.6 Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
   text-shadow: 0 0 1px #fff;
-  align: center;
+  text-align: center;
 }
 .entry .gist {
   background: #eee;
