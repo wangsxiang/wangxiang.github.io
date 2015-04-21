@@ -775,7 +775,7 @@ article footer .addthis iframe {
 #page-navs {
   zoom: 1;
   margin: block-margin auto;
-  margin-bottom: 50px;
+  margin-bottom: 1em;
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
@@ -1043,7 +1043,7 @@ article footer .addthis iframe {
   }
 }
 .social-list a:hover:before {
-  color: color-blue;
+  color: #2ca6cb;
 }
 .social-list a[title="weibo"]::before,
 .social-list a[title="twitter"]::before,
@@ -1068,16 +1068,13 @@ article footer .addthis iframe {
 .social-list a[title="zhihu"]::before {
   content: "\f1d6";
 }
-footer {
-  margin-top: 1em;
-  background: color-footer;
-  padding: 0 2% 0.5em;
-}
 #footer {
-  width: 95%;
+  width: 96%;
   margin: 0 auto;
   overflow: hidden;
+  padding: 0 2% 0.5em;
   position: relative;
+  background: #1f1f1f;
 }
 #footer .line {
   width: 100%;
@@ -1109,7 +1106,7 @@ footer {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
-  background: no-repeat url("author-img-data") left top;
+  background: no-repeat url("../imgs/author.jpg") left top;
   -webkit-background-size: 6.875em 6.875em;
   -moz-background-size: 6.875em 6.875em;
   background-size: 6.875em 6.875em;
@@ -1136,9 +1133,8 @@ footer {
   }
 }
 .info {
-  font-family: font-custom-family;
-  -webkit-font-smoothing: ;
-  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, 'Songti SC', SimSun, "Microsoft YaHei", serif;
+  font-size: 130%;
   line-height: 1.3em;
   width: 90%;
   margin: 0 auto;
@@ -1184,14 +1180,14 @@ footer {
   }
 }
 .social-font a:hover:before {
-  color: color-blue;
+  color: #2ca6cb;
 }
 .social-font a[title="weibo"]::before,
 .social-font a[title="twitter"]::before,
 .social-font a[title="github"]::before,
 .social-font a[title="facebook"]::before,
 .social-font a[title="linkedin"]::before {
-  font-family: font-icon-family;
+  font-family: FontAwesome;
   -webkit-font-smoothing: ;
 }
 .social-font a[title="weibo"]::before {
@@ -1210,8 +1206,8 @@ footer {
   content: "\f08c";
 }
 .copyright {
-  -webkit-font-smoothing: ;
-  font-family: font-custom-family;
+  font-family: Georgia, 'Times New Roman', Times, 'Songti SC', SimSun, "Microsoft YaHei", serif;
+  font-size: 0.8em;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -1225,7 +1221,7 @@ footer {
   color: #fff;
 }
 .copyright a:hover {
-  color: color-blue;
+  color: #2ca6cb;
 }
 .entry .gist {
   background: #eee;
