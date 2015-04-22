@@ -1105,11 +1105,18 @@ article footer .addthis iframe {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
+  background: no-repeat url("../imgs/author.jpg") left top;
+  -webkit-background-size: 6.875em 6.875em;
+  -moz-background-size: 6.875em 6.875em;
+  background-size: 6.875em 6.875em;
+  -webkit-border-radius: 3.4375em;
+  border-radius: 3.4375em;
+  -webkit-transition: -webkit-transform 2s ease-out;
+  -moz-transition: -moz-transform 2s ease-out;
+  -o-transition: -o-transform 2s ease-out;
+  -ms-transition: -ms-transform 2s ease-out;
+  transition: transform 2s ease-out;
 }
-.author background no-repeat url("../"+theme.author_img) left top,
-.author background-size w w,
-.author border-radius (w/2),
-.author transition transform 2s ease-out,
 .author:hover {
   -webkit-transform: rotateZ(360deg);
   -moz-transform: rotateZ(360deg);
