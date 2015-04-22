@@ -69,7 +69,7 @@ a:hover {
   clear: both;
 }
 .inner {
-  width: 1200px;
+  width: 1270px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1260px) {
@@ -78,7 +78,7 @@ a:hover {
   }
 }
 #main-col {
-  width: 900px;
+  width: 950px;
 }
 @media screen and (max-width: 1260px) {
   #main-col {
@@ -86,7 +86,7 @@ a:hover {
     margin-right: -300px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #main-col {
     margin-right: 0;
     float: none;
@@ -100,7 +100,7 @@ a:hover {
     margin-right: 300px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #wrapper {
     margin-right: 0;
   }
