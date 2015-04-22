@@ -246,24 +246,24 @@ header nav ul {
   list-style: none;
 }
 @media only screen and (min-width: 1024px) {
-  float right {
+  header nav ul {
     float: right;
   }
 }
 @media only screen and (min-width: 1024px) {
-  ul li {
+  header nav ul li {
     float: left;
   }
 }
-ul li a {
+header nav ul li a {
   padding: 0.2em 0 0.2em 1em;
 }
 @media only screen and (min-width: 1024px) {
-  ul li a {
+  header nav ul li a {
     padding: 0.2em 1.5em;
   }
 }
-ul li a:hover {
+header nav ul li a:hover {
   background: #1b7f9e;
   color: #e9cd4c;
 }
@@ -992,7 +992,7 @@ article footer .addthis iframe {
   }
 }
 .info-logo {
-  font-family: font-custom-family;
+  font-family: Georgia, 'Times New Roman', Times, 'Songti SC', SimSun, "Microsoft YaHei", serif;
   -webkit-font-smoothing: ;
   font-size: 150%;
   line-height: 1.3em;
@@ -1049,7 +1049,7 @@ article footer .addthis iframe {
 .social-list a[title="github"]::before,
 .social-list a[title="facebook"]::before,
 .social-list a[title="zhihu"]::before {
-  font-family: font-icon-family;
+  font-family: FontAwesome;
   -webkit-font-smoothing: ;
 }
 .social-list a[title="weibo"]::before {
