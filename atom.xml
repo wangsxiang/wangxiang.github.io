@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://opiece.me/"/>
-  <updated>2015-04-23T05:21:39.052Z</updated>
+  <updated>2015-04-24T07:14:49.067Z</updated>
   <id>http://opiece.me/</id>
   
   <author>
@@ -15,11 +15,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[《Head_First_Python》阅读笔记(7、11章)]]></title>
+    <link href="http://opiece.me/2015/04/24/head-first-python-reading-notes-2/"/>
+    <id>http://opiece.me/2015/04/24/head-first-python-reading-notes-2/</id>
+    <published>2015-04-24T07:03:57.000Z</published>
+    <updated>2015-04-24T07:14:49.067Z</updated>
+    <content type="html"><![CDATA[<h2 id="前言">前言</h2><p>因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。<br><a id="more"></a></p>
+<h2 id="正文">正文</h2><h3 id="第七章：web开发">第七章：web开发</h3><p><strong>生成html的辅助函数yate.py</strong></p>
+<p><img src="http://i1.tietuku.com/a27070c02dcb9b54.png" alt=""><br><img src="http://i1.tietuku.com/0640482f9330e006.png" alt=""></p>
+<p><strong>使用Python构建一个web服务器</strong></p>
+<p><img src="http://i1.tietuku.com/96f4e8126135f1e6.png" alt=""></p>
+<p><strong>调用yate.py生成html页面，显示选手列表</strong></p>
+<p><img src="http://i1.tietuku.com/b321d2007525974e.png" alt=""></p>
+<p><strong>调用yate.py生成html页面，显示选手最快的三个成绩</strong></p>
+<p><img src="http://i1.tietuku.com/71abb9a635ade47a.png" alt=""></p>
+<p><strong>Python术语：</strong><br>“@property”：这时一个修饰符，可以使类方法表现得像是一个类属性。<br>Web术语：<br>“CGI”：通用网关接口，允许web服务器运行一个服务器端程序。</p>
+<p><strong>知识点：</strong><br>标准库string模块包括一个名为Template的类，它支持简单的字符串替换。<br>标准库http.server模块可以用来在Python中建立一个简单的web服务器。<br>标准库CGI模块对编写CGI脚本提供了支持。<br>标准库glob模块非常适合处理文件名列表。<br>启用标准库cgitb模块时，允许在浏览器中查看CGI编码错误。<br>CGI代码中可以使用cgitb.enable()打开CGI跟踪。<br>可以使用cgi.FieldStorage()访问作为web请求一部分发送给web服务器的数据，数据将作为一个Python字典。</p>
+<h3 id="第十一章：数据加工">第十一章：数据加工</h3><p>一个预测跑步时间的例子：</p>
+<p><strong>1.数据文件：</strong>总共有50列，只截出部分。</p>
+<p><img src="http://i1.tietuku.com/1eff51ce6f99ad2a.png" alt=""></p>
+<p><strong>2.辅助函数：</strong></p>
+<p><img src="http://i1.tietuku.com/80c2440097c874fd.png" alt=""><br><img src="http://i1.tietuku.com/8000a7bd3ff80f5e.png" alt=""></p>
+<p><strong>3.主函数：</strong></p>
+<p><img src="http://i1.tietuku.com/3ed21e3799f0129b.png" alt=""></p>
+<p><strong>4.测试：</strong></p>
+<p><img src="http://i1.tietuku.com/b187eef6a3b1915f.png" alt=""></p>
+<p><img src="http://i1.tietuku.com/63a990d4f54829ab.png" alt=""></p>
+<p><strong>数据分析：</strong><br>图中步骤1：通过输入的distance_run(20k)和recorded_time(59:59)，计算出distance_run对应的行最接近recorded_time的时间，即1:00:23；步骤2为根据distance_run和1:00:23，计算出的VO2值，即79.3，步骤三为根据79.3和predicted_distance(Marathon)，计算出预测的时间，即2:14:15。</p>
+<p><strong>Python术语：</strong><br>“条件”列表推导尾部包括一个“if”语句，允许在推导运行时控制哪些项可以增加到新列表中。<br>列表推导可以重写为一个等价的“for”循环。</p>
+<p><strong>知识点：</strong><br>input()BIF允许为用户提供提示语并接收输入。<br>time模块作为标准库的一部分，包含了大量函数可以完成时间格式之间的转换。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="前言">前言</h2><p>因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。<br>]]>
+    
+    </summary>
+    
+      <category term="Head_First_Python" scheme="http://opiece.me/tags/Head-First-Python/"/>
+    
+      <category term="Python" scheme="http://opiece.me/tags/Python/"/>
+    
+      <category term="笔记" scheme="http://opiece.me/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Python" scheme="http://opiece.me/categories/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Concise主题介绍]]></title>
     <link href="http://opiece.me/2015/04/23/Concise-introduce/"/>
     <id>http://opiece.me/2015/04/23/Concise-introduce/</id>
     <published>2015-04-23T02:59:58.000Z</published>
-    <updated>2015-04-23T05:21:39.052Z</updated>
+    <updated>2015-04-24T07:15:15.000Z</updated>
     <content type="html"><![CDATA[<h2 id="Concise概括">Concise概括</h2><p><a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>是一款为<a href="http://hexo.io" target="_blank" rel="external">Hexo</a>设计的主题。我最早使用的是light主题，因为我非常喜欢light主题简约明朗的风格，之后看到<a href="http://yangjian.me/pacman/" target="_blank" rel="external">pacman</a>主题，很喜欢pacman的头部和尾部的设计，之间甚至起过要换主题的念头(真是太可怕了)。但pacman的body部分我不是很感冒，还是更喜欢light主题的body部分，两难之下，便产生了将pacman的头部和尾部移植到light主题下的想法。说干就干，利用了几天工作之余的时间将pacman的头部和尾部成功移植到了light主题下，于是Concise便产生了。主题源码托管在<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Github</a>上。如果你喜欢本主题，欢迎你在Github上Fork和Star，或者你出于鼓励的心态，也欢迎。如果你在使用本主题的过程中遇到任何问题，欢迎在本文下方留言，本人将竭我所能帮助你。当然，由于本人能力有限，并且该主题也是基于light主题进行修改的，因此，有些地方我可能也不懂，还请见谅。<br><a id="more"></a></p>
 <h2 id="安装指南">安装指南</h2><h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/huangjunhui/concise.git themes/concise</span><br></pre></td></tr></table></figure>
 <p>Concise是本人在Hexo3.0.0版本下制作的，因此，请你最好将Hexo升级到3.0.0。</p>
