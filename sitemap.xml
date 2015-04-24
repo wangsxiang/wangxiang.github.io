@@ -1,188 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
+  
   <url>
     <loc>http://opiece.me/2015/04/23/Concise-introduce/</loc>
     <lastmod>2015-04-23T05:21:39.052Z</lastmod>
-    <data>
-        <display>
-        <title>Concise主题介绍</title>
-        <pubTime>2015-04-23T02:59:58.000Z</pubTime>
-        
-        <tag>Concise </tag>
-         
-        <tag>hexo </tag>
-         
-        <tag>theme </tag>
-         
-         
-           
-             
-              <breadCrumb title="Concise" url="http://opiece.me/categories/Concise/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
+  </url>
+  
+  <url>
+    <loc>http://opiece.me/categories/index.html</loc>
+    <lastmod>2015-04-22T15:15:17.923Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opiece.me/tags/index.html</loc>
+    <lastmod>2015-04-22T15:14:15.413Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opiece.me/about/index.html</loc>
+    <lastmod>2015-04-22T01:27:49.416Z</lastmod>
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/20/head-first-python-reading-notes-1/</loc>
     <lastmod>2015-04-20T05:10:58.047Z</lastmod>
-    <data>
-        <display>
-        <title>《Head_First_Python》阅读笔记(1-6章)</title>
-        <pubTime>2015-04-20T04:31:09.000Z</pubTime>
-        
-        <tag>Head_First_Python </tag>
-         
-        <tag>Python </tag>
-         
-        <tag>笔记 </tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://opiece.me/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/16/site-search-by-swiftype/</loc>
     <lastmod>2015-04-18T01:54:05.609Z</lastmod>
-    <data>
-        <display>
-        <title>使用swiftype实现站内搜索</title>
-        <pubTime>2015-04-16T10:56:17.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-        <tag>swiftype </tag>
-         
-        <tag>站内搜索 </tag>
-         
-         
-           
-             
-              <breadCrumb title="swiftype" url="http://opiece.me/categories/swiftype/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/16/hexo-guide-3/</loc>
     <lastmod>2015-04-18T01:49:59.684Z</lastmod>
-    <data>
-        <display>
-        <title>hexo搭建博客的实用功能(下)(基于hexo3.0)</title>
-        <pubTime>2015-04-16T05:52:29.000Z</pubTime>
-        
-        <tag>RSS </tag>
-         
-        <tag>Sitemap </tag>
-         
-        <tag>hexo </tag>
-         
-        <tag>文章导航 </tag>
-         
-        <tag>返回顶部 </tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://opiece.me/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide-2/</loc>
     <lastmod>2015-04-18T01:48:47.547Z</lastmod>
-    <data>
-        <display>
-        <title>hexo搭建博客的实用功能(上)(基于hexo3.0)</title>
-        <pubTime>2015-04-09T15:57:38.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://opiece.me/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
     <lastmod>2015-04-18T01:47:01.375Z</lastmod>
-    <data>
-        <display>
-        <title>使用Hexo搭建个人博客(基于hexo3.0)</title>
-        <pubTime>2015-04-09T05:32:09.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://opiece.me/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/06/start-my-hexo/</loc>
     <lastmod>2015-04-11T15:22:45.759Z</lastmod>
-    <data>
-        <display>
-        <title>开始我的hexo博客</title>
-        <pubTime>2015-04-06T10:52:46.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://opiece.me/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
   <url>
     <loc>http://opiece.me/2015/04/06/git-basic-commands/</loc>
     <lastmod>2015-04-10T16:01:10.465Z</lastmod>
-    <data>
-        <display>
-        <title>Git常用的基础命令</title>
-        <pubTime>2015-04-06T11:52:45.000Z</pubTime>
-        
-        <tag>git </tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://opiece.me/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
+  </url>
+  
+  <url>
+    <loc>http://opiece.me/404.html</loc>
+    <lastmod>2015-04-07T03:18:08.502Z</lastmod>
+  </url>
+  
 </urlset>
