@@ -91,27 +91,27 @@
 </div>
   
   <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-04-06T11:52:45.000Z"><a href="/2015/04/06/git-basic-commands/">2015-04-06</a></time>
-      
-      
-  
-    <h1 class="title">Git常用的基础命令</h1>
-  
-
-    </header>
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	Git常用的基础命令
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://opiece.me" title="huangjunhui">huangjunhui</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-04-06T11:52:45.000Z" itemprop="datePublished">2015-04-06</time>
+    更新日期:<time datetime="2015-04-10T16:01:10.465Z" itemprop="dateModified">2015-04-11</time>
+    
+  </p>
+</header>
     <div class="entry">
-      
-	  
-				
-					<div id="toc" class="toc-article">
-						<strong class="toc-title">文章目录</strong>
-						<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#起步"><span class="toc-number">1.</span> <span class="toc-text">起步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GIT基础"><span class="toc-number">2.</span> <span class="toc-text">GIT基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GIT分支"><span class="toc-number">3.</span> <span class="toc-text">GIT分支</span></a></li></ol>
-					</div>
-				
-		  
+		
+			<div id="toc" class="toc-article">
+				<strong class="toc-title">文章目录</strong>
+				<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#起步"><span class="toc-number">1.</span> <span class="toc-text">起步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GIT基础"><span class="toc-number">2.</span> <span class="toc-text">GIT基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GIT分支"><span class="toc-number">3.</span> <span class="toc-text">GIT分支</span></a></li></ol>
+			</div>
+		
         <h2 id="起步">起步</h2><p><strong>用户信息</strong><br>配置你个人的用户名称和电子邮件地址。这两条配置很重要，每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “youname”</span><br><span class="line">$ git config --global user.email “<span class="number">12345</span>@example.com”</span><br></pre></td></tr></table></figure></p>
 <p>如果用了 —global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 —global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。<br><a id="more"></a></p>
 <h2 id="GIT基础">GIT基础</h2><p><strong>查看配置信息</strong><br>查看已有的配置信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line">$ git config <span class="operator">-l</span></span><br></pre></td></tr></table></figure></p>
@@ -158,10 +158,8 @@
 <p><strong>快进master分支</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git merge client</span><br></pre></td></tr></table></figure></p>
 <p>衍合：一旦分支中的提交对象发布到公共仓库，就千万不要对该分支进行衍合操作。</p>
 
-      
     </div>
     <footer>
-      
         
   
   <div class="categories">
@@ -190,13 +188,10 @@
 document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 </script>
 <!-- Baidu Button END -->      
-		
-      <div class="clearfix"></div>
+        <div class="clearfix"></div>
     </footer>
   </div>
 </article>
-
-
 
  <nav id="pagination" >
     
@@ -211,8 +206,6 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 
 
 <section id="comment">
-
-	
 	<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="2015/04/06/git-basic-commands/" data-title="Git常用的基础命令" data-url="http://opiece.me/2015/04/06/git-basic-commands/"></div>
 	<!-- 多说评论框 end -->
@@ -229,8 +222,6 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 	})();
 	</script>
 	<!-- 多说公共JS代码 end -->
-
-  
 </section>
 
 </div></div>

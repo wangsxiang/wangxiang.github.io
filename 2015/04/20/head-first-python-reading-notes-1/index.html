@@ -91,27 +91,27 @@
 </div>
   
   <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-04-20T04:31:09.000Z"><a href="/2015/04/20/head-first-python-reading-notes-1/">2015-04-20</a></time>
-      
-      
-  
-    <h1 class="title">《Head_First_Python》阅读笔记(1-6章)</h1>
-  
-
-    </header>
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	《Head_First_Python》阅读笔记(1-6章)
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://opiece.me" title="huangjunhui">huangjunhui</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-04-20T04:31:09.000Z" itemprop="datePublished">2015-04-20</time>
+    更新日期:<time datetime="2015-04-20T05:10:58.047Z" itemprop="dateModified">2015-04-20</time>
+    
+  </p>
+</header>
     <div class="entry">
-      
-	  
-				
-					<div id="toc" class="toc-article">
-						<strong class="toc-title">文章目录</strong>
-						<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">2.</span> <span class="toc-text">正文</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一章：初识Python：人人都爱列表"><span class="toc-number">2.1.</span> <span class="toc-text">第一章：初识Python：人人都爱列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章：共享你的代码：函数模块"><span class="toc-number">2.2.</span> <span class="toc-text">第二章：共享你的代码：函数模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三章：文件与异常：处理错误"><span class="toc-number">2.3.</span> <span class="toc-text">第三章：文件与异常：处理错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四章：持久存储：数据保存到文件"><span class="toc-number">2.4.</span> <span class="toc-text">第四章：持久存储：数据保存到文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第五章：处理数据"><span class="toc-number">2.5.</span> <span class="toc-text">第五章：处理数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第六章：定制数据对象"><span class="toc-number">2.6.</span> <span class="toc-text">第六章：定制数据对象</span></a></li></ol></li></ol>
-					</div>
-				
-		  
+		
+			<div id="toc" class="toc-article">
+				<strong class="toc-title">文章目录</strong>
+				<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">2.</span> <span class="toc-text">正文</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一章：初识Python：人人都爱列表"><span class="toc-number">2.1.</span> <span class="toc-text">第一章：初识Python：人人都爱列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章：共享你的代码：函数模块"><span class="toc-number">2.2.</span> <span class="toc-text">第二章：共享你的代码：函数模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三章：文件与异常：处理错误"><span class="toc-number">2.3.</span> <span class="toc-text">第三章：文件与异常：处理错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四章：持久存储：数据保存到文件"><span class="toc-number">2.4.</span> <span class="toc-text">第四章：持久存储：数据保存到文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第五章：处理数据"><span class="toc-number">2.5.</span> <span class="toc-text">第五章：处理数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第六章：定制数据对象"><span class="toc-number">2.6.</span> <span class="toc-text">第六章：定制数据对象</span></a></li></ol></li></ol>
+			</div>
+		
         <h2 id="前言">前言</h2><p>最近利用闲暇时间开始学习Python，经朋友介绍，首先从《Head_First_Python》一书下手，现在读了一半，个人觉得此书非常有趣，内容包含了大量有趣的插图小故事，一次性读完100页都没有无聊的感觉，强力推荐Python新手阅读。还是老习惯，阅读过程中将一些知识点记录了下来，写成笔记，以用来查阅使用，也防止以后遗忘。<br><a id="more"></a></p>
 <h2 id="正文">正文</h2><h3 id="第一章：初识Python：人人都爱列表">第一章：初识Python：人人都爱列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; movies = [<span class="string">"The Holy Grail"</span>,<span class="string">"The Life of Brian"</span>,<span class="string">"The Meaning of Life"</span>]<span class="comment">#创建movies列表，类似数组</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(movies[<span class="number">1</span>]) 	<span class="comment">#使用标准的中括号偏移量来访问一个列表槽中的数据项</span></span><br><span class="line">The Life of Brian</span><br><span class="line">&gt;&gt;&gt; cast = [<span class="string">"Cleese"</span>,<span class="string">'Palin'</span>,<span class="string">'Jones'</span>,<span class="string">"Idle"</span>]</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)	<span class="comment">#显示整个列表</span></span><br><span class="line">[<span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>]</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(len(cast))	<span class="comment">#显示cast列表中的数据项个数</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast[<span class="number">1</span>])</span><br><span class="line">Palin</span><br><span class="line">&gt;&gt;&gt; cast.append(<span class="string">"Gilliam"</span>)	<span class="comment">#在列表末尾增加一个数据项</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)</span><br><span class="line">[<span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>, <span class="string">'Gilliam'</span>]</span><br><span class="line">&gt;&gt;&gt; cast.pop()	<span class="comment">#删除列表数据的最后一项</span></span><br><span class="line"><span class="string">'Gilliam'</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)</span><br><span class="line">[<span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>]</span><br><span class="line">&gt;&gt;&gt; cast.extend([<span class="string">"Gilliam"</span>,<span class="string">"Chapman"</span>])	<span class="comment">#在列表末尾增加一个数据项集合</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)</span><br><span class="line">[<span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>, <span class="string">'Gilliam'</span>, <span class="string">'Chapman'</span>]</span><br><span class="line">&gt;&gt;&gt; cast.remove(<span class="string">"Chapman"</span>)		<span class="comment">#删除一个特定的数据项</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)</span><br><span class="line">[<span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>, <span class="string">'Gilliam'</span>]</span><br><span class="line">&gt;&gt;&gt; cast.insert(<span class="number">0</span>,<span class="string">"Chapman"</span>)		<span class="comment">#在某个特定的位置前面增加一个数据项</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(cast)</span><br><span class="line">[<span class="string">'Chapman'</span>, <span class="string">'Cleese'</span>, <span class="string">'Palin'</span>, <span class="string">'Jones'</span>, <span class="string">'Idle'</span>, <span class="string">'Gilliam'</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; fav_movies = [<span class="string">"The Holy Grail"</span>,<span class="string">"The Life of Brian"</span>]</span><br><span class="line">&gt;&gt;&gt; <span class="keyword">for</span> each_flick <span class="keyword">in</span> fav_movies:		<span class="comment">#使用for循环遍历列表</span></span><br><span class="line">	<span class="built_in">print</span>(each_flick)</span><br><span class="line"></span><br><span class="line">The Holy Grail</span><br><span class="line">The Life of Brian</span><br><span class="line">&gt;&gt;&gt; count = <span class="number">0</span>	<span class="comment">#使用while循环遍历列表</span></span><br><span class="line">&gt;&gt;&gt; <span class="keyword">while</span> count&lt;len(movies):</span><br><span class="line">	<span class="built_in">print</span>(movies[count])</span><br><span class="line">	count = count + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">The Holy Grail</span><br><span class="line"><span class="number">1975</span></span><br><span class="line">The Life of Brian</span><br><span class="line"><span class="number">1979</span></span><br><span class="line">The Meaning of Life</span><br><span class="line"><span class="number">1983</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; movies = [<span class="string">"The Holy Grail"</span>,<span class="number">1975</span>,<span class="string">"Terry Jones &amp; Terry Gilliam"</span>,<span class="number">91</span>,[<span class="string">"Graham Chapman"</span>,[<span class="string">"Michael Palin"</span>,<span class="string">"John Cleese"</span>,<span class="string">"Terry Gilliam"</span>,<span class="string">"Eric Idle"</span>,<span class="string">"Terry Jones"</span>]]]<span class="comment">#嵌套列表</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(movies[<span class="number">4</span>][<span class="number">1</span>][<span class="number">3</span>])</span><br><span class="line">Eric Idle</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; dir(__builtins__)		<span class="comment">#显示Python提供的内置方法列表，所有小写单词都是BIF(内置函数)</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">help</span>(input)		<span class="comment">#查看内置方法的使用方法</span></span><br><span class="line">&gt;&gt;&gt; def <span class="built_in">print</span>_lol(the_list):<span class="comment">#创建一个函数，其中函数名为print_lol，参数为the_list，本函数实现了递归</span></span><br><span class="line">	<span class="keyword">for</span> each_item <span class="keyword">in</span> the_list:		<span class="comment">#这行以下为函数代码组</span></span><br><span class="line">		<span class="keyword">if</span> isinstance(each_item,list): <span class="comment">#如果each_item是list</span></span><br><span class="line">			<span class="built_in">print</span>_lol(each_item)	</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="built_in">print</span>(each_item)</span><br><span class="line"></span><br><span class="line">			</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>_lol(movies)      <span class="comment">#调用了上面创建的函数(递归)</span></span><br><span class="line">The Holy Grail</span><br><span class="line"><span class="number">1975</span></span><br><span class="line">Terry Jones &amp; Terry Gilliam</span><br><span class="line"><span class="number">91</span></span><br><span class="line">Graham Chapman</span><br><span class="line">Michael Palin</span><br><span class="line">John Cleese</span><br><span class="line">Terry Gilliam</span><br><span class="line">Eric Idle</span><br><span class="line">Terry Jones</span><br></pre></td></tr></table></figure>
 <p><strong>Python术语：</strong><br>BIF：内置函数。<br>组(suite)：Python代码块，会通过缩进来指示分组。<br><strong>知识点：</strong><br>标识符是指示数据对象的名字。标识符没有“类型”，不过标识符所指示的数据对象有类型。<br>列表可以存放任意数据，而且数据可以是混合类型。列表还可以包含其他列表。<br>列表可以随需要伸缩。数据使用的所有内存都由Python为你管理。<br>Python使用缩进将语句归组在一起。<br>isinstance()BIF会检查一个标识符是否指示某个指定类型的数据对象，例如isinstance(each_item,list)：检查each_item是否为list<br>cast.pop(n)：删除cast列表的第n项，第一项为cast.pop(0)，n为空删除最后一项</p>
@@ -153,10 +153,8 @@
 <p><img src="http://i2.tietuku.com/b2706762f680b002.png" alt=""></p>
 <p><strong>Python术语：</strong><br>“字典”：这时一个内置的数据结构，允许将数据值与键关联。<br><strong>知识点：</strong><br>类似于列表和集合，Python的字典会随着新数据增加到这个数据结构中而动态扩大。<br>类方法(代码)与函数的定义基本相同，也就是说，要用def关键字定义。<br>类中的每个属性前面都必须有self，从而将数据与其实例关联。<br>类可以从零开始构建，也可以从Python的内置类或其他定制类继承。</p>
 
-      
     </div>
     <footer>
-      
         
   
   <div class="categories">
@@ -185,13 +183,10 @@
 document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 </script>
 <!-- Baidu Button END -->      
-		
-      <div class="clearfix"></div>
+        <div class="clearfix"></div>
     </footer>
   </div>
 </article>
-
-
 
  <nav id="pagination" >
     
@@ -206,8 +201,6 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 
 
 <section id="comment">
-
-	
 	<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="2015/04/20/head-first-python-reading-notes-1/" data-title="《Head_First_Python》阅读笔记(1-6章)" data-url="http://opiece.me/2015/04/20/head-first-python-reading-notes-1/"></div>
 	<!-- 多说评论框 end -->
@@ -224,8 +217,6 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 	})();
 	</script>
 	<!-- 多说公共JS代码 end -->
-
-  
 </section>
 
 </div></div>

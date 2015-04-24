@@ -313,7 +313,7 @@ article.link .title a:after {
   vertical-align: super;
 }
 article .post-content {
-  padding: 20px 20px 15px 77px;
+  padding: 20px 20px 15px 30px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -437,6 +437,54 @@ article .gallery .next:before {
   content: '\f054';
   right: 10px;
 }
+@media only screen and (min-width: 768px) {
+  article header.article-info {
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+article header.article-info >h1 {
+  font-size: 170%;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: normal;
+  -webkit-font-smoothing: antialiased;
+}
+@media only screen and (min-width: 1024px) {
+  article header.article-info >h1 {
+    font-size: 200%;
+    padding-top: 0.3em;
+  }
+}
+article header.article-info >p.article-author {
+  padding: 0.3em 4% 0.3em 0;
+  text-align: right;
+  border-bottom: 1px solid #dbdbdb;
+}
+@media only screen and (min-width: 768px) {
+  article header.article-info >p.article-author {
+    float: right;
+    border-bottom: none;
+  }
+}
+article header.article-info >p.article-time {
+  padding-top: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  article header.article-info >p.article-time {
+    float: right;
+    margin-right: 1em;
+    padding-top: 0.1em;
+    font-size: 0.9em;
+  }
+}
+article header.article-info >p.article-time:before {
+  font-family: FontAwesome;
+  font-size: 130%;
+  content: "\f017";
+  -webkit-font-smoothing: ;
+}
 article header .icon {
   width: 32px;
   height: 32px;
@@ -459,15 +507,9 @@ article header .icon:before {
   width: 32px;
   text-align: center;
 }
-article header time {
-  color: #777;
-  font: 0.9em Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
-  margin-bottom: 5px;
-  display: block;
-  line-height: 1;
-}
 article header .title {
-  font-weight: normal;
+  font-size: 170%;
+  line-height: 1.5;
 }
 article header .title a {
   color: #000;
@@ -928,7 +970,7 @@ article footer .addthis iframe {
   text-align: center;
   padding-top: 2em;
   margin-bottom: 1.5em;
-  border-bottom: 1px solid color-gray;
+  border-bottom: 1px solid #ccc;
   background-position: left bottom;
   background-repeat: repeat-x;
   -webkit-background-size: 5px auto;
