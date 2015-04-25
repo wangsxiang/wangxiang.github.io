@@ -788,7 +788,6 @@ article footer .addthis iframe {
 .archive-title {
   color: #777;
   font-weight: normal;
-  margin-bottom: 30px;
   text-shadow: 0 0 1px #fff;
 }
 .archive-title:before {
@@ -803,7 +802,6 @@ article footer .addthis iframe {
   content: '\f07b';
 }
 .archive {
-  margin-top: 30px;
   margin-bottom: 50px;
 }
 .archive article {
