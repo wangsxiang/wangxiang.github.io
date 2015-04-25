@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://opiece.me/"/>
-  <updated>2015-04-25T13:00:29.981Z</updated>
+  <updated>2015-04-24T07:14:49.067Z</updated>
   <id>http://opiece.me/</id>
   
   <author>
@@ -13,19 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[test file]]></title>
-    <link href="http://opiece.me/2015/04/25/test-file/"/>
-    <id>http://opiece.me/2015/04/25/test-file/</id>
-    <published>2015-04-25T13:00:29.000Z</published>
-    <updated>2015-04-25T13:00:29.981Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[《Head_First_Python》阅读笔记(7、11章)]]></title>
