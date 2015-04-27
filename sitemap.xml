@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
+    <lastmod>2015-04-27T13:35:07.436Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2015/04/23/Concise-introduce/</loc>
     <lastmod>2015-04-24T16:33:55.540Z</lastmod>
   </url>
@@ -44,11 +49,6 @@
   <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide-2/</loc>
     <lastmod>2015-04-18T01:48:47.547Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
-    <lastmod>2015-04-18T01:47:01.375Z</lastmod>
   </url>
   
   <url>
