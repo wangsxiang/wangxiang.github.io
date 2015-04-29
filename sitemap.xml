@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2015/04/23/Concise-introduce/</loc>
+    <lastmod>2015-04-29T06:51:30.030Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2015/04/28/push-hexo-to-github-and-gitcafe/</loc>
     <lastmod>2015-04-28T12:13:55.165Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
     <lastmod>2015-04-27T13:35:07.436Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://opiece.me/2015/04/23/Concise-introduce/</loc>
-    <lastmod>2015-04-24T16:33:55.540Z</lastmod>
   </url>
   
   <url>
