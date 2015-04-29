@@ -69,7 +69,7 @@ a:hover {
   clear: both;
 }
 .inner {
-  width: 1270px;
+  width: 94%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1260px) {
@@ -78,7 +78,7 @@ a:hover {
   }
 }
 #main-col {
-  width: 950px;
+  width: 75%;
 }
 @media screen and (max-width: 1260px) {
   #main-col {
@@ -870,7 +870,7 @@ article footer .addthis iframe {
   color: #ddd;
 }
 #sidebar {
-  width: 280px;
+  width: 22%;
   margin-top: 30px;
   line-height: 1.8em;
 }
