@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=44218032" charset="UTF-8"></script>
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=44254927" charset="UTF-8"></script>
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?7192fa361f5cabb11d8a22de41c1ba8f";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?384cc9dde1da4d450d73f78e8d7f98e4";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+  
+  <title>《Python基础教程》阅读笔记(1-2章) | Chillax&#39;s blog</title>
+  <meta name="author" content="huangjunhui">
+  
+  <meta name="description" content="Goals determine what you are going to be">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="《Python基础教程》阅读笔记(1-2章)"/>
+  <meta property="og:site_name" content="Chillax&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/imgs/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="Chillax&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header><div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/imgs/logo.png" alt="Chillax&#39;s blog" title="Chillax&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name">Chillax&#39;s blog</h1>
+				<h2 class="blog-motto">Goals determine what you are going to be</h2>
+			</div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li> <a href="/atom.xml">RSS</a> </li>
+				</ul>
+			</nav>			
+</div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	《Python基础教程》阅读笔记(1-2章)
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://opiece.me/about" title="huangjunhui">huangjunhui</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-04-30T13:02:03.000Z" itemprop="datePublished">2015-04-30</time>
+    更新日期:<time datetime="2015-04-30T13:07:32.466Z" itemprop="dateModified">2015-04-30</time>
+    
+  </p>
+</header>
+    <div class="entry">
+		
+			<div id="toc" class="toc-article">
+				<strong class="toc-title">文章目录</strong>
+				<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一章：基础知识"><span class="toc-number">1.</span> <span class="toc-text">第一章：基础知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章：列表和元组"><span class="toc-number">2.</span> <span class="toc-text">第二章：列表和元组</span></a></li></ol>
+			</div>
+		
+        <p>这几天开始阅读《Python基础教程》，老规矩，还是边看边写笔记，不过因为之前已经看了《Head_First_Python》，因此，在看《Python基础教程》时，与《Head_First_Python》重复的知识点就不记了。<br><a id="more"></a></p>
+<h3 id="第一章：基础知识">第一章：基础知识</h3><p><strong>基础运算</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="number">1</span>//<span class="number">2</span>		<span class="comment">##整除</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt; <span class="number">1</span>/<span class="number">2</span></span><br><span class="line"><span class="number">0.5</span></span><br><span class="line">&gt;&gt;&gt; <span class="number">1</span>+<span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line">&gt;&gt;&gt; <span class="number">2</span>**<span class="number">3</span>	<span class="comment">##幂运算(乘方)，2**3等价于pow(2,3)</span></span><br><span class="line"></span><br><span class="line"><span class="number">8</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>一些函数运算</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; math.floor(<span class="number">3.9</span>)	<span class="comment">##返回数的下舍整数</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line">&gt;&gt;&gt; math.ceil(<span class="number">2.1</span>)  <span class="comment">##返回数的上入证书</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line">&gt;&gt;&gt; abs(-<span class="number">5</span>)			<span class="comment">##返回数字的绝对值</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line">&gt;&gt;&gt; math.sqrt(<span class="number">4</span>)		<span class="comment">##返回数字的平方根</span></span><br><span class="line"><span class="number">2.0</span></span><br><span class="line">&gt;&gt;&gt; math.sqrt(-<span class="number">1</span>)	<span class="comment">##普通sqrt只能处理浮点数</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#27&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    math.sqrt(-<span class="number">1</span>)</span><br><span class="line">ValueError: math domain error</span><br><span class="line">&gt;&gt;&gt; import cmath   <span class="comment">##导入复数模块</span></span><br><span class="line">&gt;&gt;&gt; cmath.sqrt(-<span class="number">1</span>)	<span class="comment">##复数模块可以处理虚数</span></span><br><span class="line"><span class="number">1</span>j</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; pow(<span class="number">2</span>,<span class="number">3</span>)		<span class="comment">##求幂运算</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line">&gt;&gt;&gt; round(<span class="number">2.555555</span>,<span class="number">3</span>)  <span class="comment">##根据给定的精度对数字进行四舍五入</span></span><br><span class="line"><span class="number">2.556</span></span><br><span class="line">&gt;&gt;&gt; round(<span class="number">2.444444</span>,<span class="number">4</span>)</span><br><span class="line"><span class="number">2.4444</span></span><br><span class="line">&gt;&gt;&gt; round(<span class="number">2.500000000</span>) <span class="comment">##不指定精度的情况</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line">&gt;&gt;&gt; round(<span class="number">2.5000000001</span>)</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>str：</strong>把值转换为合理形式的字符串<br><strong>repr：</strong>创建一个字符串，以合法的Python表达式的形式来表示值<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(repr(<span class="string">"hello world"</span>))</span><br><span class="line"><span class="string">'hello world'</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(str(<span class="string">"hello world"</span>))</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure></p>
+<p><strong>原始字符串</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(<span class="string">'c:\nowhere'</span>) <span class="comment">##普通字符串碰到’\n’会换行</span></span><br><span class="line">c:</span><br><span class="line">owhere</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(r<span class="string">'c:\nowhere'</span>)<span class="comment">##原始字符串以r开头，不会把反斜线当作特殊字符，</span></span><br><span class="line">c:\nowhere</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(r<span class="string">'c:\nowhere\'</span>)	<span class="comment">##原始字符串的最后一个字符(引号前面的那个)不能是反斜线</span></span><br><span class="line">      </span><br><span class="line">SyntaxError: EOL <span class="keyword">while</span> scanning string literal</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(r<span class="string">'c:\nowhere\\'</span>)<span class="comment">##2个反斜线没问题</span></span><br><span class="line">c:\nowhere\\</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(r<span class="string">'c:\nowhere'</span> <span class="string">'\\'</span>)<span class="comment">##想在末尾输出1个反斜线，可以使用这种方法</span></span><br><span class="line">c:\nowhere\</span><br><span class="line">&gt;&gt;&gt; u<span class="string">'hello world!'</span>	<span class="comment">##unicode字符串，在Python3.0中，所有字符串都是unicode字符串</span></span><br><span class="line"><span class="string">'hello world!'</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="第二章：列表和元组">第二章：列表和元组</h3><p><strong>分片：</strong>包含第一个索引，不包含第二个索引，无论在左边还是右边开始取都遵循这个规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; n = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; n[-<span class="number">3</span>:-<span class="number">1</span>]</span><br><span class="line">[<span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">&gt;&gt;&gt; n[-<span class="number">3</span>:<span class="number">0</span>]</span><br><span class="line">[]</span><br><span class="line">&gt;&gt;&gt; n[-<span class="number">3</span>:]	<span class="comment">##第二个索引为空，默认输出到末尾</span></span><br><span class="line">[<span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">0</span>:]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]	</span><br><span class="line">&gt;&gt;&gt; n[:<span class="number">3</span>]	<span class="comment">##第一个索引为空，默认从头开始输出</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">&gt;&gt;&gt; n[:]		<span class="comment">##两个索引都为空，输出整个序列</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; n[::<span class="number">2</span>]	<span class="comment">##设置步长为2，则每次跳过1个元素</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">0</span>:<span class="number">10</span>:<span class="number">3</span>]	<span class="comment">##设置步长为3，则每次跳过2个元素</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">4</span>, <span class="number">7</span>, <span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">0</span>:<span class="number">10</span>:-<span class="number">1</span>]	<span class="comment">##步长可以为负数，此时从右向左提取元素，但此时索引也要进行对换(大的在前，小的在后)</span></span><br><span class="line">[]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">10</span>:<span class="number">0</span>:-<span class="number">1</span>]	</span><br><span class="line">[<span class="number">10</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">10</span>:<span class="number">0</span>:-<span class="number">3</span>]</span><br><span class="line">[<span class="number">10</span>, <span class="number">7</span>, <span class="number">4</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>]	<span class="comment">##此时取索引为5的，不取索引为0的(第一个索引为5)</span></span><br><span class="line">[<span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">0</span>:<span class="number">5</span>:<span class="number">1</span>]		<span class="comment">##此时取索引为0的，不取索引为5的(第一个索引为0)</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">&gt;&gt;&gt; n[<span class="number">5</span>::-<span class="number">2</span>]		<span class="comment">##步长为负数，此处相当于n[5:0:-2]，</span></span><br><span class="line">[<span class="number">6</span>, <span class="number">4</span>, <span class="number">2</span>]</span><br><span class="line">&gt;&gt;&gt; n[:<span class="number">5</span>:-<span class="number">2</span>]		<span class="comment">##步长为负数，此处相当于n[10:5:-2]，</span></span><br><span class="line">[<span class="number">10</span>, <span class="number">8</span>]</span><br></pre></td></tr></table></figure></p>
+<p>对于一个正数步长，Python会从序列的头部开始向右提取元素，直到最后一个元素；对于负数步长，则是从序列的尾部开始向左提取元素，直到第一个元素。</p>
+<p><strong>列表</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = list(<span class="string">'hello'</span>)	<span class="comment">##根据字符串创建列表</span></span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[<span class="string">'h'</span>, <span class="string">'e'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>]</span><br><span class="line">&gt;&gt;&gt; <span class="string">''</span>.join(a)		<span class="comment">##将由字符串组成的列表转换为字符串</span></span><br><span class="line"><span class="string">'hello'</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; name = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>,<span class="string">'dd'</span>,<span class="string">'ee'</span>,<span class="string">'ff'</span>]</span><br><span class="line">&gt;&gt;&gt; del name[<span class="number">1</span>]		<span class="comment">##删除元素</span></span><br><span class="line">&gt;&gt;&gt; name</span><br><span class="line">[<span class="string">'aa'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>, <span class="string">'ff'</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; name = list(<span class="string">'Perl'</span>)</span><br><span class="line">&gt;&gt;&gt; name</span><br><span class="line">[<span class="string">'P'</span>, <span class="string">'e'</span>, <span class="string">'r'</span>, <span class="string">'l'</span>]</span><br><span class="line">&gt;&gt;&gt; name[<span class="number">1</span>:] = list(<span class="string">'ython'</span>)	<span class="comment">##分片赋值，替换掉原来的元素</span></span><br><span class="line">&gt;&gt;&gt; name</span><br><span class="line">[<span class="string">'P'</span>, <span class="string">'y'</span>, <span class="string">'t'</span>, <span class="string">'h'</span>, <span class="string">'o'</span>, <span class="string">'n'</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; number = [<span class="number">1</span>,<span class="number">5</span>]</span><br><span class="line">&gt;&gt;&gt; number[<span class="number">1</span>:<span class="number">1</span>] = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]	<span class="comment">##分片赋值，不替换原来元素的情况下插入新的元素</span></span><br><span class="line">&gt;&gt;&gt; number</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; number[<span class="number">5</span>:]=[<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; number</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; number[<span class="number">0</span>:<span class="number">10</span>:<span class="number">2</span>] = [<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>]	<span class="comment">#将步长改为2后，如果要进行替换必须替换范围内的所有数</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#129&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    number[<span class="number">0</span>:<span class="number">10</span>:<span class="number">2</span>] = [<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>]</span><br><span class="line">ValueError: attempt to assign sequence of size <span class="number">3</span> to extended slice of size <span class="number">5</span></span><br><span class="line">&gt;&gt;&gt; number[<span class="number">0</span>:<span class="number">10</span>:<span class="number">2</span>] = [<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>]</span><br><span class="line">&gt;&gt;&gt; number</span><br><span class="line">[<span class="number">11</span>, <span class="number">2</span>, <span class="number">12</span>, <span class="number">4</span>, <span class="number">13</span>, <span class="number">6</span>, <span class="number">14</span>, <span class="number">8</span>, <span class="number">15</span>, <span class="number">10</span>]</span><br><span class="line">&gt;&gt;&gt; number[<span class="number">0</span>:<span class="number">10</span>:<span class="number">4</span>] = [<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>]	<span class="comment">##步长为4</span></span><br><span class="line">&gt;&gt;&gt; number</span><br><span class="line">[<span class="number">21</span>, <span class="number">2</span>, <span class="number">12</span>, <span class="number">4</span>, <span class="number">22</span>, <span class="number">6</span>, <span class="number">14</span>, <span class="number">8</span>, <span class="number">23</span>, <span class="number">10</span>]</span><br></pre></td></tr></table></figure></p>
+<p><strong>列表方法</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">test</span> = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'vv'</span>,<span class="string">'cc'</span>,<span class="string">'bb'</span>]</span><br><span class="line">&gt;&gt;&gt; test.count(<span class="string">'bb'</span>)	<span class="comment">##计数</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line">&gt;&gt;&gt; test.index(<span class="string">'bb'</span>)	<span class="comment">##查找第一个匹配项的索引位置</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]	</span><br><span class="line">&gt;&gt;&gt; x.reverse()	<span class="comment">##反转</span></span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line">[<span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line">&gt;&gt;&gt; y = x	<span class="comment">##这样写，x和y会指向同一个列表</span></span><br><span class="line">&gt;&gt;&gt; y.sort()</span><br><span class="line">&gt;&gt;&gt; y	</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]	</span><br><span class="line">&gt;&gt;&gt; y = x[:]		<span class="comment">##这样写，y得到的是包含了x所有元素的分片</span></span><br><span class="line">&gt;&gt;&gt; y.sort()</span><br><span class="line">&gt;&gt;&gt; y</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line">[<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = [<span class="string">'aaa'</span>,<span class="string">'aa'</span>,<span class="string">'aaaa'</span>,<span class="string">'aaaaa'</span>,<span class="string">'a'</span>]</span><br><span class="line">&gt;&gt;&gt; x.sort(key = len)		<span class="comment">##指定排序方法为：按字符串长度排序</span></span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line">[<span class="string">'a'</span>, <span class="string">'aa'</span>, <span class="string">'aaa'</span>, <span class="string">'aaaa'</span>, <span class="string">'aaaaa'</span>]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = [<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">1</span>]</span><br><span class="line">&gt;&gt;&gt; x.sort(reverse = True)	<span class="comment">##指定排序方式为：降序</span></span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line">[<span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure></p>
+<p><strong>元组</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>	<span class="comment">##这样也算创建了一个元组，元组大多情况都是通过圆括号括起来</span></span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">&gt;&gt;&gt; <span class="number">32</span></span><br><span class="line"><span class="number">32</span></span><br><span class="line">&gt;&gt;&gt; <span class="number">32</span>,</span><br><span class="line">(<span class="number">32</span>,)</span><br><span class="line">&gt;&gt;&gt; <span class="number">3</span>*(<span class="number">40</span>+<span class="number">2</span>)	<span class="comment">##普通运算</span></span><br><span class="line"><span class="number">126</span></span><br><span class="line">&gt;&gt;&gt; <span class="number">3</span>*(<span class="number">40</span>+<span class="number">2</span>,)	<span class="comment">##元组</span></span><br><span class="line">(<span class="number">42</span>, <span class="number">42</span>, <span class="number">42</span>)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; tuple([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])	<span class="comment">##tuple函数：以一个序列作为参数并把它转换为元组，如果参数就是元组，则返回原样</span></span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">&gt;&gt;&gt; tuple(<span class="string">'abc'</span>)		<span class="comment">##参数是字符串</span></span><br><span class="line">(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>)</span><br><span class="line">&gt;&gt;&gt; tuple((<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>))	<span class="comment">##参数是元组的情况</span></span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>	<span class="comment">##元组的分片跟列表的分片一样</span></span><br><span class="line">&gt;&gt;&gt; x[<span class="number">0</span>:<span class="number">2</span>]</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">&gt;&gt;&gt; x[<span class="number">0</span>:<span class="number">3</span>]</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">&gt;&gt;&gt; x[<span class="number">1</span>]</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>元组存在的意义：</strong><br>1.元组可以在映射（和集合的成员）中当作键使用——而列表则不行<br>2.元组作为很多内建函数和方法的返回值存在，也就是说你必须对元组进行处理。只要不尝试修改元组，那么，“处理”元组在绝大多数情况下就是把它们当作列表来进行操作(除非需要使用一些元组没有的方法，例如index和count)</p>
+<p><strong>小结：</strong><br>1.序列。序列是一种数据结构，它包含的元素都进行了编号（从0开始）。典型的序列包括列表、字符串和元组。其中，列表是可变的（可以进行修改），而元组和字符串是不可变的(一旦创建了就是固定的)。通过分片操作可以访问序列的一部分，其中分片需要两个索引号来指出分片的起始和结束位置。想要改变列表，则要对相应的位置进行赋值，或者使用赋值语句重写整个分片。<br>2.成员资格。in操作符可以检查一个值是否存在于序列（或者其他容器）中。对字符串使用in操作符是一个特例——它可以查找子字符串。<br>3.方法。一些内建类型（例如列表和字符串，元组则不在其中）具有很多有用的方法。这些方法有些像函数——不过它们与特定值联系得更密切。方法是面向对象编程的一个重要概念，稍后的第7章中会对其进行讨论。</p>
+
+    </div>
+    <footer>
+        
+  
+  <div class="categories">
+    <a href="/categories/Python/">Python</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Python/">Python</a>, <a href="/tags/Python基础教程/">Python基础教程</a>, <a href="/tags/笔记/">笔记</a>
+  </div>
+
+		<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+        <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2015/04/28/push-hexo-to-github-and-gitcafe/" class="alignright next" title="将hexo博客同时托管到github和gitcafe">将hexo博客同时托管到github和gitcafe</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+	
+	<section id="comment">
+		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="2015/04/30/python-basic-tutorial-reading-notes-1/" data-title="《Python基础教程》阅读笔记(1-2章)" data-url="http://opiece.me/2015/04/30/python-basic-tutorial-reading-notes-1/"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"chillax"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+		<!-- 多说公共JS代码 end -->
+	</section>
+	
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form>
+    <input type="search" id="chillax-search-input" placeholder="搜索">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Concise/">Concise</a><small>1</small></li>
+  
+    <li><a href="/categories/Python/">Python</a><small>3</small></li>
+  
+    <li><a href="/categories/git/">git</a><small>1</small></li>
+  
+    <li><a href="/categories/hexo/">hexo</a><small>5</small></li>
+  
+    <li><a href="/categories/swiftype/">swiftype</a><small>1</small></li>
+  
+    <li><a href="/categories/常见问题/">常见问题</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/Concise/" style="font-size: 10px;">Concise</a><a href="/tags/Head-First-Python/" style="font-size: 13.33px;">Head_First_Python</a><a href="/tags/Python/" style="font-size: 16.67px;">Python</a><a href="/tags/Python基础教程/" style="font-size: 10px;">Python基础教程</a><a href="/tags/RSS/" style="font-size: 10px;">RSS</a><a href="/tags/Sitemap/" style="font-size: 10px;">Sitemap</a><a href="/tags/git/" style="font-size: 10px;">git</a><a href="/tags/hexo/" style="font-size: 20px;">hexo</a><a href="/tags/sitemap/" style="font-size: 10px;">sitemap</a><a href="/tags/swiftype/" style="font-size: 10px;">swiftype</a><a href="/tags/theme/" style="font-size: 10px;">theme</a><a href="/tags/常见问题/" style="font-size: 10px;">常见问题</a><a href="/tags/托管/" style="font-size: 10px;">托管</a><a href="/tags/文章导航/" style="font-size: 10px;">文章导航</a><a href="/tags/站内搜索/" style="font-size: 10px;">站内搜索</a><a href="/tags/笔记/" style="font-size: 16.67px;">笔记</a><a href="/tags/返回顶部/" style="font-size: 10px;">返回顶部</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="140" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1923610190&verifier=6af5ad6a&colors=fafafa,fafafa,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/v123411739" title="Grace's Blog" target="_blank">Grace</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi,I&#39;m the designer of this theme. <br/>
+			You can download this theme on my github.</p>
+	</section>
+	 
+	<div class="social-font clearfix">
+		
+		<a href="http://weibo.com/1923610190" target="_blank" title="weibo"></a>
+		
+		
+		
+		<a href="https://github.com/huangjunhui" target="_blank" title="github"></a>
+		
+		
+		<a href="https://www.facebook.com/huangjunhui" target="_blank" title="facebook"></a>
+		
+		
+		
+		<a href="mailto:jhhuang1993@foxmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/huangjunhui/concise" target="_blank" title="Concise">Concise</a> © 2015 
+		
+		<a href="http://opiece.me/about" target="_blank" title="huangjunhui">huangjunhui</a>
+		
+		</p>
+</div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/counter.js"></script>
+
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','gngcYKRA61Ss_pfLd6uz','2.0.0');
+</script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:100px;right:10px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
