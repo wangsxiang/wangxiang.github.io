@@ -752,21 +752,19 @@ article footer .addthis iframe {
 .comments-count {
   color: #d6d6d6;
   float: right;
-}
-.comments-count span:before {
-  font-family: FontAwesome;
-  -webkit-font-smoothing: ;
-  content: "\f075";
-}
-@media phonemax {
-  .comments-count {
-    float: left;
-  }
+a
 }
 .icon-comment:before {
   font-family: FontAwesome;
   -webkit-font-smoothing: ;
   content: "\f075";
+}
+span:before {
+  font-family: FontAwesome;
+  -webkit-font-smoothing: ;
+  content: "\f075";
+}
+@media phonemax {
 }
 #comment {
   padding: 20px;
