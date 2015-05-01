@@ -751,8 +751,6 @@ article footer .addthis iframe {
 }
 .comments-count {
   color: #d6d6d6;
-  margin-top: 0.3em;
-  padding: 0.5em 0;
   float: right;
 }
 .comments-count span:before {
@@ -764,14 +762,6 @@ article footer .addthis iframe {
   .comments-count {
     float: left;
   }
-}
-.comments-count-link {
-  padding: 0.5em;
-  margin: 0 0.3em;
-}
-.comments-count-link:hover {
-  color: #fff !important;
-  background: #2ca6cb;
 }
 #comment {
   padding: 20px;
