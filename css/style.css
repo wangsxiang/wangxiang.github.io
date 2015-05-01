@@ -759,11 +759,6 @@ a
   -webkit-font-smoothing: ;
   content: "\f075";
 }
-span:before {
-  font-family: FontAwesome;
-  -webkit-font-smoothing: ;
-  content: "\f075";
-}
 @media phonemax {
 }
 #comment {
