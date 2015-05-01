@@ -763,6 +763,11 @@ article footer .addthis iframe {
     float: left;
   }
 }
+.icon-comment:before {
+  font-family: FontAwesome;
+  -webkit-font-smoothing: ;
+  content: "\f075";
+}
 #comment {
   padding: 20px;
   background: #fafafa;
