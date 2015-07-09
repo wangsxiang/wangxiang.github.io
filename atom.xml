@@ -153,8 +153,8 @@
     <link href="http://opiece.me/2015/04/23/Concise-introduce/"/>
     <id>http://opiece.me/2015/04/23/Concise-introduce/</id>
     <published>2015-04-23T02:59:58.000Z</published>
-    <updated>2015-05-01T14:38:40.729Z</updated>
-    <content type="html"><![CDATA[<h2 id="Concise概括">Concise概括</h2><p><a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>是一款为<a href="http://hexo.io" target="_blank" rel="external">Hexo</a>设计的主题。我最早使用的是light主题，因为我非常喜欢light主题简约明朗的风格，之后看到<a href="http://yangjian.me/pacman/" target="_blank" rel="external">pacman</a>主题，很喜欢pacman的头部和尾部的设计，之间甚至起过要换主题的念头(真是太可怕了)。但pacman的body部分我不是很感冒，还是更喜欢light主题的body部分，两难之下，便产生了将pacman的头部和尾部移植到light主题下的想法。说干就干，利用了几天工作之余的时间将pacman的头部和尾部成功移植到了light主题下，于是Concise便产生了。主题源码托管在<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Github</a>上。如果你喜欢本主题，欢迎你在Github上Fork和Star，或者你出于鼓励的心态，也欢迎。如果你在使用本主题的过程中遇到任何问题，欢迎在本文下方留言，本人将竭我所能帮助你。当然，由于本人能力有限，并且该主题也是基于light主题进行修改的，因此，有些地方我可能也不懂，还请见谅。<br><a id="more"></a></p>
+    <updated>2015-07-09T08:03:05.477Z</updated>
+    <content type="html"><![CDATA[<h2 id="Concise概括">Concise概括</h2><p><a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>是一款为<a href="http://hexo.io" target="_blank" rel="external">Hexo</a>设计的主题。我最早使用的是light主题，因为我非常喜欢light主题简约明朗的风格，之后看到<a href="http://yangjian.me/pacman/" target="_blank" rel="external">pacman</a>主题，很喜欢pacman的头部和尾部的设计，之间甚至起过要换主题的念头(真是太可怕了)。但pacman的body部分我不是很感冒，还是更喜欢light主题的body部分，两难之下，便产生了将pacman的头部和尾部移植到light主题下的想法。说干就干，利用了几天工作之余的时间将pacman的头部和尾部成功移植到了light主题下，于是Concise便产生了。主题源码托管在<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Github</a>上。如果你喜欢本主题，欢迎你在Github上Fork和Star，或者你出于鼓励的心态，也欢迎。如果你在使用本主题的过程中遇到任何问题，欢迎在本文下方留言，本人将竭我所能帮助你。当然，由于本人能力有限，并且该主题也是基于light主题进行修改的。因此，有些地方我可能也不懂，还请见谅。<br><a id="more"></a></p>
 <h2 id="安装指南">安装指南</h2><h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/huangjunhui/concise.git themes/concise</span><br></pre></td></tr></table></figure>
 <p>Concise是本人在Hexo3.0.0版本下制作的，因此，请你最好将Hexo升级到3.0.0。</p>
 <h3 id="启用">启用</h3><p>修改你的博客根目录下的<code>config.yml</code>配置文件中的<code>theme</code>属性，将其修改为<code>concise</code>。</p>
@@ -170,7 +170,7 @@
 <h2 id="总结">总结</h2><p>有其他任何问题，欢迎在下方留言，本主题刚刚发布，肯定有很多不足，还请见谅。如果你喜欢本主题，请在本主题的<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Github</a>上进行star或fork，这样我更新的时候，你就能及时知道。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="Concise概括">Concise概括</h2><p><a href="https://github.com/huangjunhui/concise">Concise</a>是一款为<a href="http://hexo.io">Hexo</a>设计的主题。我最早使用的是light主题，因为我非常喜欢light主题简约明朗的风格，之后看到<a href="http://yangjian.me/pacman/">pacman</a>主题，很喜欢pacman的头部和尾部的设计，之间甚至起过要换主题的念头(真是太可怕了)。但pacman的body部分我不是很感冒，还是更喜欢light主题的body部分，两难之下，便产生了将pacman的头部和尾部移植到light主题下的想法。说干就干，利用了几天工作之余的时间将pacman的头部和尾部成功移植到了light主题下，于是Concise便产生了。主题源码托管在<a href="https://github.com/huangjunhui/concise">Github</a>上。如果你喜欢本主题，欢迎你在Github上Fork和Star，或者你出于鼓励的心态，也欢迎。如果你在使用本主题的过程中遇到任何问题，欢迎在本文下方留言，本人将竭我所能帮助你。当然，由于本人能力有限，并且该主题也是基于light主题进行修改的，因此，有些地方我可能也不懂，还请见谅。<br>]]>
+    <![CDATA[<h2 id="Concise概括">Concise概括</h2><p><a href="https://github.com/huangjunhui/concise">Concise</a>是一款为<a href="http://hexo.io">Hexo</a>设计的主题。我最早使用的是light主题，因为我非常喜欢light主题简约明朗的风格，之后看到<a href="http://yangjian.me/pacman/">pacman</a>主题，很喜欢pacman的头部和尾部的设计，之间甚至起过要换主题的念头(真是太可怕了)。但pacman的body部分我不是很感冒，还是更喜欢light主题的body部分，两难之下，便产生了将pacman的头部和尾部移植到light主题下的想法。说干就干，利用了几天工作之余的时间将pacman的头部和尾部成功移植到了light主题下，于是Concise便产生了。主题源码托管在<a href="https://github.com/huangjunhui/concise">Github</a>上。如果你喜欢本主题，欢迎你在Github上Fork和Star，或者你出于鼓励的心态，也欢迎。如果你在使用本主题的过程中遇到任何问题，欢迎在本文下方留言，本人将竭我所能帮助你。当然，由于本人能力有限，并且该主题也是基于light主题进行修改的。因此，有些地方我可能也不懂，还请见谅。<br>]]>
     
     </summary>
     
