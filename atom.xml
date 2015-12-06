@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Goals determine what you are going to be]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://opiece.me/"/>
-  <updated>2015-12-06T05:53:05.518Z</updated>
+  <updated>2015-12-06T05:56:13.484Z</updated>
   <id>http://opiece.me/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://opiece.me/2015/12/06/add-article-comments/"/>
     <id>http://opiece.me/2015/12/06/add-article-comments/</id>
     <published>2015-12-06T05:50:31.000Z</published>
-    <updated>2015-12-06T05:53:05.518Z</updated>
+    <updated>2015-12-06T05:56:13.484Z</updated>
     <content type="html"><![CDATA[<h2 id="前言">前言</h2><p>因为工作的原因，已经很久没有折腾过博客，半年多的时间内，<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题现在也拥有了一部分使用者。近期，比较多的人问过我一个问题：<strong>文章的评论数是怎么添加的</strong>，我后来回想了一下，因为当初自己增加这功能的时候，并没有立即出现效果，而是过了一段时间才显示的，所以并没有集成到<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题内。随着此文章的发布，这个功能也已经同步更新到<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题上，使用此主题的可以更新下。附：本人当初搞这功能参考的是<a href="http://dev.duoshuo.com/docs/5016427f77cf5fa30500000e" target="_blank" rel="external">多说官方教程</a>。<br><a id="more"></a></p>
 <h2 id="正文">正文</h2><p>废话不多说，直接进入正题，以<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>为例子，只需要修改两个地方，如果其他主题遇到问题可留言，本人将积极帮忙。<br>1.在<code>E:\hexo\themes\concise\layout\_partial\article.ejs</code>文件内的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>上面增加以下代码，如果找不到上面这行代码，则在<code>&lt;/footer&gt;</code>标签上面增加以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"comments-count"</span>&gt;</span><br><span class="line">			</span><br><span class="line">	&lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- item.path %&gt;#comment"</span> class=<span class="string">"ds-thread-count icon-comment"</span> data-thread-key=<span class="string">"&lt;%- item.path %&gt;"</span> data-count-type=<span class="string">"comments"</span>&gt;&lt;/a&gt;</span><br><span class="line">	</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
