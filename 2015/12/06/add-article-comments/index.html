@@ -27,7 +27,7 @@
 
 
   
-  <title>第 2 页 | 归档：2015 | Chillax&#39;s blog</title>
+  <title>显示文章评论数 | Chillax&#39;s blog</title>
   <meta name="author" content="huangjunhui">
   
   <meta name="description" content="Goals determine what you are going to be">
@@ -35,7 +35,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="显示文章评论数"/>
   <meta property="og:site_name" content="Chillax&#39;s blog"/>
 
   
@@ -76,71 +76,130 @@
 </div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2015</h2>
-
-<div class="archive">
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2015-04-16T05:52:29.000Z"><a href="/2015/04/16/hexo-guide-3/">2015-04-16</a></time>
-		
-		  <h1 class="title"><a href="/2015/04/16/hexo-guide-3/">hexo搭建博客的实用功能(下)(基于hexo3.0)</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2015-04-09T15:57:38.000Z"><a href="/2015/04/09/hexo-guide-2/">2015-04-09</a></time>
-		
-		  <h1 class="title"><a href="/2015/04/09/hexo-guide-2/">hexo搭建博客的实用功能(上)(基于hexo3.0)</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2015-04-09T05:32:09.000Z"><a href="/2015/04/09/hexo-guide/">2015-04-09</a></time>
-		
-		  <h1 class="title"><a href="/2015/04/09/hexo-guide/">使用Hexo搭建个人博客(基于hexo3.0)</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2015-04-06T11:52:45.000Z"><a href="/2015/04/06/git-basic-commands/">2015-04-06</a></time>
-		
-		  <h1 class="title"><a href="/2015/04/06/git-basic-commands/">Git常用的基础命令</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
-  <article class="post">
-	<div class="post-content">
-	  <header>
-		<time datetime="2015-04-06T10:52:46.000Z"><a href="/2015/04/06/start-my-hexo/">2015-04-06</a></time>
-		
-		  <h1 class="title"><a href="/2015/04/06/start-my-hexo/">开始我的hexo博客</a></h1>
-		
-	  </header>
-	</div>
-  </article>
-
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
 </div>
+  
+  <div class="post-content">
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	显示文章评论数
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://opiece.me/about" title="huangjunhui">huangjunhui</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-12-06T05:50:31.000Z" itemprop="datePublished">2015-12-06</time>
+    更新日期:<time datetime="2015-12-06T05:51:16.336Z" itemprop="dateModified">2015-12-06</time>
+    
+  </p>
+</header>
+    <div class="entry">
+		
+        <h2 id="前言">前言</h2><p>因为工作的原因，已经很久没有折腾过博客，半年多的时间内，<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题现在也拥有了一部分使用者。近期，比较多的人问过我一个问题：<strong>文章的评论数是怎么添加的</strong>，我后来回想了一下，因为当初自己增加这功能的时候，并没有立即出现效果，而是过了一段时间才显示的，所以并没有集成到<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题内。随着此文章的发布，这个功能也已经同步更新到<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>主题上，使用此主题的可以更新下。附：本人当初搞这功能参考的是<a href="http://dev.duoshuo.com/docs/5016427f77cf5fa30500000e" target="_blank" rel="external">多说官方教程</a>。</p>
+<h2 id="正文">正文</h2><p>废话不多说，直接进入正题，以<a href="https://github.com/huangjunhui/concise" target="_blank" rel="external">Concise</a>为例子，只需要修改两个地方，如果其他主题遇到问题可留言，本人将积极帮忙。<br>1.在<code>E:\hexo\themes\concise\layout\_partial\article.ejs</code>文件内的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"clearfix"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>上面增加以下代码，如果找不到上面这行代码，则在<code>&lt;/footer&gt;</code>标签上面增加以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"comments-count"</span>&gt;</span><br><span class="line">			</span><br><span class="line">	&lt;a href=<span class="string">"&lt;%- config.root %&gt;&lt;%- item.path %&gt;#comment"</span> class=<span class="string">"ds-thread-count icon-comment"</span> data-thread-key=<span class="string">"&lt;%- item.path %&gt;"</span> data-count-type=<span class="string">"comments"</span>&gt;&lt;/a&gt;</span><br><span class="line">	</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2.在<code>E:\myblog\themes\concise\source\css\_partial\article.styl</code>文件内增加以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.comments-count</span><br><span class="line">  color lighten(color-gray,<span class="number">20</span>%)</span><br><span class="line">  <span class="built_in">float</span> right</span><br><span class="line">  a</span><br><span class="line">	.icon-comment:before</span><br><span class="line">	  font-family font-icon</span><br><span class="line">	  font-smoothing()</span><br><span class="line">	  content <span class="string">"\f075"</span></span><br><span class="line">  @media phonemax</span><br><span class="line">    <span class="built_in">float</span> left</span><br></pre></td></tr></table></figure></p>
+<h2 id="总结">总结</h2><p>有其他任何问题，欢迎在下方留言。</p>
 
-    <nav id="page-navs">
-      <a class="extend prev" rel="prev" href="/archives/2015/">&laquo; Prev</a><a class="page-number" href="/archives/2015/">1</a><span class="page-number current">2</span>
-    </nav>
+    </div>
+    <footer>
+        
+  
+  <div class="categories">
+    <a href="/categories/Concise/">Concise</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Concise/">Concise</a>, <a href="/tags/hexo/">hexo</a>, <a href="/tags/theme/">theme</a>
+  </div>
+
+		<div class="bdsharebuttonbox">
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+	"common":{
+		"bdSnsKey":{},
+		"bdText":"",
+		"bdMini":"2",
+		"bdMiniList":false,
+		"bdPic":"",
+		"bdStyle":"0",
+		"bdSize":"24"
+	},
+	"share":{},
+	"image":{
+		"viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+		"viewText":"分享到：",
+		"viewSize":"24"
+	},
+	"selectShare":{
+		"bdContainerClass":null,
+		"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+	}
+};
+with(document)0[
+	(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>    
+        <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2015/04/30/python-basic-tutorial-reading-notes-1/" class="alignright next" title="《Python基础教程》阅读笔记(1-2章)">《Python基础教程》阅读笔记(1-2章)</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+	
+	<section id="comment">
+		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="2015/12/06/add-article-comments/" data-title="显示文章评论数" data-url="http://opiece.me/2015/12/06/add-article-comments/"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"chillax"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+		<!-- 多说公共JS代码 end -->
+	</section>
+	
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
