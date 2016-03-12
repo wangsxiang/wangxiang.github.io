@@ -107,14 +107,13 @@
     <link href="http://opiece.me/2015/04/28/baiduzhanzhang-sitemap-grab-failure/"/>
     <id>http://opiece.me/2015/04/28/baiduzhanzhang-sitemap-grab-failure/</id>
     <published>2015-04-28T11:11:39.000Z</published>
-    <updated>2015-04-28T11:41:16.578Z</updated>
+    <updated>2016-03-12T11:17:09.904Z</updated>
     <content type="html"><![CDATA[<h3 id="前言">前言</h3><p>前几天在百度站长活动：Sitemap大力抢的活动中，抢到了开通Sitemap的权限。<br><img src="http://i1.tietuku.com/c96fbda29e513872.png" alt=""><br><a id="more"></a></p>
 <h3 id="问题描述">问题描述</h3><p>既然抢到了权限，不使用就太浪费了。于是就帮自己的博客搞了下Sitemap，但是无奈一直失败，找不到原因，sitemap单独访问是没问题的，但是就是抓取失败。<br><img src="http://i2.tietuku.com/53d617b34b6ca5e8.png" alt=""></p>
 <h3 id="解决方法">解决方法</h3><p>直到今天，一个偶然的机会，让我把这个问题给解决了。首先，我的博客是同时托管到<a href="https://github.com/huangjunhui/huangjunhui.github.io" target="_blank" rel="external">github</a>和<a href="https://gitcafe.com/huangjunhui/huangjunhui" target="_blank" rel="external">gitcafe</a>上的，但是由于之前gitcafe上没设置自定义域名的关系，因此域名解析一直是解析到github上。今天，我找到原因，在gitcafe上设置了自定义域名后，便把国内访问博客的域名解析到了gitcafe上。<br>以前域名解析到github上的时候，抓取sitemap总是失败，提示访问不到服务器之类的。今天，把域名解析到gitcafe上，然后再来重新抓取了一下sitemap便才成功了。<br><img src="http://i2.tietuku.com/f226c3ea95f6409b.png" alt=""></p>
-<h3 id="gitcafe设置自定义域名">gitcafe设置自定义域名</h3><p>1.点击进入项目，点击项目设置。<br><img src="http://i2.tietuku.com/831fc192f0748f21.png" alt=""></p>
-<p>2.选择Pages服务，添加自己的域名即可，添加完可能需要几分钟才能访问，莫急。<br><img src="http://i2.tietuku.com/3248c5cdf84f4e08.png" alt=""></p>
-<h3 id="添加sitemap的具体方法：">添加sitemap的具体方法：</h3><p>1.登陆<a href="http://zhanzhang.baidu.com/" target="_blank" rel="external">百度站长</a>。<br>2.如果你是第一次登陆，可能还要添加你的网站网址，然后验证。验证方法有三种(设置域名解析的)，建议使用第三种，前两种我没验证成功过，不知道是不是因为当时托管在github上的原因。<br>3.验证完后，点击下图的链接提交。<br><img src="http://i2.tietuku.com/1f4c350ee4d5ec20.png" alt=""></p>
-<p>4.然后选择自动提交，提交方式：sitemap。填写更新周期，填写数据文件地址：该地址一般为：你的网站地址/sitemap.xml，然后提交即可。<br><img src="http://i2.tietuku.com/b8d582d7176ce6e1.png" alt=""></p>
+<h3 id="gitcafe设置自定义域名">gitcafe设置自定义域名</h3><p>1.点击进入项目，点击项目设置。<br><img src="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145778055676.png" alt=""></p>
+<p>2.选择Pages服务，添加自己的域名即可，添加完可能需要几分钟才能访问，莫急。<br><img src="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145778055726.png" alt=""></p>
+<h3 id="添加sitemap的具体方法：">添加sitemap的具体方法：</h3><p>1.登陆<a href="http://zhanzhang.baidu.com/" target="_blank" rel="external">百度站长</a>。<br>2.如果你是第一次登陆，可能还要添加你的网站网址，然后验证。验证方法有三种(设置域名解析的)，建议使用第三种，前两种我没验证成功过，不知道是不是因为当时托管在github上的原因。<br><img src="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145778139824.png" alt=""><br>3.验证完后，点击链接提交。<br>4.然后选择自动提交，提交方式：sitemap。填写更新周期，填写数据文件地址：该地址一般为：你的网站地址/sitemap.xml，然后提交即可。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h3 id="前言">前言</h3><p>前几天在百度站长活动：Sitemap大力抢的活动中，抢到了开通Sitemap的权限。<br><img src="http://i1.tietuku.com/c96fbda29e513872.png" alt=""><br>]]>
