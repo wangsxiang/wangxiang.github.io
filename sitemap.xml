@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2015/04/16/site-search-by-swiftype/</loc>
+    <lastmod>2016-03-12T12:22:20.156Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2015/04/28/baiduzhanzhang-sitemap-grab-failure/</loc>
     <lastmod>2016-03-12T11:25:22.806Z</lastmod>
   </url>
@@ -64,11 +69,6 @@
   <url>
     <loc>http://opiece.me/categories/index.html</loc>
     <lastmod>2015-04-22T15:15:17.923Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://opiece.me/2015/04/16/site-search-by-swiftype/</loc>
-    <lastmod>2015-04-18T01:54:05.609Z</lastmod>
   </url>
   
   <url>
