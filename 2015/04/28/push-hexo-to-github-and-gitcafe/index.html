@@ -65,8 +65,8 @@
 <meta property="og:url" content="http://opiece.me/2015/04/28/push-hexo-to-github-and-gitcafe/index.html">
 <meta property="og:site_name" content="Chillax's Blog">
 <meta property="og:description" content="动机很多人都把hexo托管到github上，因为github大家都用的比较久了。但是，如果你的博客主要访问者肯定还是国内的用户，国内的用户访问gitcafe比github是要快不少的，如下图。">
-<meta property="og:image" content="http://i2.tietuku.com/a76361b97f178d70.png">
-<meta property="og:image" content="http://i1.tietuku.com/5f568601746c58c4.png">
+<meta property="og:image" content="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145777779013.png">
+<meta property="og:image" content="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145777779052.png">
 <meta property="og:image" content="http://cejkw.img46.wal8.com/img46/533646_20151206140909/144938216984.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将hexo博客同时托管到github和gitcafe">
@@ -323,9 +323,9 @@
       
 
       
-        <h3 id="动机">动机</h3><p>很多人都把hexo托管到github上，因为github大家都用的比较久了。但是，如果你的博客主要访问者肯定还是国内的用户，国内的用户访问gitcafe比github是要快不少的，如下图。<br><img src="http://i2.tietuku.com/a76361b97f178d70.png" alt=""><br><a id="more"></a><br>因此，我便萌生了将博客托管到gitcafe上的想法，但同时我又不想放弃在github上的更新。因此，便想到了，能不能同时更新到两个网站上，找了许多资料最终是找到了办法。</p>
+        <h3 id="动机">动机</h3><p>很多人都把hexo托管到github上，因为github大家都用的比较久了。但是，如果你的博客主要访问者肯定还是国内的用户，国内的用户访问gitcafe比github是要快不少的，如下图。<br><img src="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145777779013.png" alt=""><br><a id="more"></a><br>因此，我便萌生了将博客托管到gitcafe上的想法，但同时我又不想放弃在github上的更新。因此，便想到了，能不能同时更新到两个网站上，找了许多资料最终是找到了办法。</p>
 <h3 id="解决办法">解决办法</h3><p>只要将博客根目录下的<code>_config.yml</code>的deploy修改成类似以下代码即可。我这边提交采用的SSH密钥，这个方法有个好处，提交的时候不用输入用户名和密码。如果你习惯用http的方式，只要将地址改成相应的http地址即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  message: <span class="string">""</span></span><br><span class="line">  repo: </span><br><span class="line">    github: git@github.com:huangjunhui/huangjunhui.github.io.git,master</span><br><span class="line">    gitcafe: git@gitcafe.com:huangjunhui/huangjunhui.git,gitcafe-pages</span><br></pre></td></tr></table></figure></p>
-<p>此外，在填写上面这段代码的时候请注意，上面这段代码左边的<code>-</code>号只能有2个(如下图红圈)，如果超过2个一般就是会被认定为填写格式有问题。<br><img src="http://i1.tietuku.com/5f568601746c58c4.png" alt=""></p>
+<p>此外，在填写上面这段代码的时候请注意，上面这段代码左边的<code>-</code>号只能有2个(如下图红圈)，如果超过2个一般就是会被认定为填写格式有问题。<br><img src="http://cejkw.img47.wal8.com/img47/533646_20151206140909/145777779052.png" alt=""></p>
 <h3 id="域名解析">域名解析</h3><p>当你像我一样，把博客同时托管在gitcafe和github时。如果你有自己的域名，你在解析的时候就可以将国内访问解析到gitcafe上，国外访问解析到github上，可以参考下图我的设置。</p>
 <p><img src="http://cejkw.img46.wal8.com/img46/533646_20151206140909/144938216984.png" alt=""></p>
 <h3 id="参考">参考</h3><p><a href="http://ppting.me/2015/02/08/gitcafe/" target="_blank" rel="external">同时将博客部署在Github和Gitcafe上，并通过DNSPOD分流</a></p>
