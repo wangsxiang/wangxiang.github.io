@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/message/index.html</loc>
+    <lastmod>2016-03-13T04:10:01.308Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/404.html</loc>
     <lastmod>2016-03-12T17:17:18.561Z</lastmod>
   </url>
@@ -54,11 +59,6 @@
   <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
     <lastmod>2016-03-12T13:42:59.739Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://opiece.me/message/index.html</loc>
-    <lastmod>2016-03-12T13:25:06.555Z</lastmod>
   </url>
   
   <url>
