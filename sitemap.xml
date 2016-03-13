@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/</loc>
+    <lastmod>2016-03-13T11:50:46.988Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2015/04/09/hexo-guide/</loc>
     <lastmod>2016-03-13T04:57:47.051Z</lastmod>
   </url>

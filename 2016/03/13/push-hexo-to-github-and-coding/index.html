@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="RSS,Sitemap,hexo,文章导航,返回顶部," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -59,15 +59,16 @@
 
 
 
-<meta name="description" content="前言上一节讲到了很多个博客使用的功能，这一节将继续介绍其他的使用功能。">
+<meta name="description" content="动机之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo搭建博客的实用功能(下)(基于hexo3.0)">
-<meta property="og:url" content="http://opiece.me/2015/04/16/hexo-guide-3/index.html">
+<meta property="og:title" content="将hexo博客同时托管到github和coding">
+<meta property="og:url" content="http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/index.html">
 <meta property="og:site_name" content="Chillax's Blog">
-<meta property="og:description" content="前言上一节讲到了很多个博客使用的功能，这一节将继续介绍其他的使用功能。">
+<meta property="og:description" content="动机之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测">
+<meta property="og:image" content="https://coding.net/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo搭建博客的实用功能(下)(基于hexo3.0)">
-<meta name="twitter:description" content="前言上一节讲到了很多个博客使用的功能，这一节将继续介绍其他的使用功能。">
+<meta name="twitter:title" content="将hexo博客同时托管到github和coding">
+<meta name="twitter:description" content="动机之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测">
 
 
 
@@ -85,7 +86,7 @@
   };
 </script>
 
-  <title> hexo搭建博客的实用功能(下)(基于hexo3.0) | Chillax's Blog </title>
+  <title> 将hexo博客同时托管到github和coding | Chillax's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -254,7 +255,7 @@
             
             
               
-                hexo搭建博客的实用功能(下)(基于hexo3.0)
+                将hexo博客同时托管到github和coding
               
             
           </h1>
@@ -266,8 +267,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-04-16T13:52:29+08:00" content="2015-04-16">
-              2015-04-16
+            <time itemprop="dateCreated" datetime="2016-03-13T19:21:30+08:00" content="2016-03-13">
+              2016-03-13
             </time>
           </span>
 
@@ -296,8 +297,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/04/16/hexo-guide-3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/hexo-guide-3/" itemprop="commentsCount"></span>
+                <a href="/2016/03/13/push-hexo-to-github-and-coding/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/13/push-hexo-to-github-and-coding/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,7 +308,7 @@
 
           
           
-             <span id="/2015/04/16/hexo-guide-3/" class="leancloud_visitors" data-flag-title="hexo搭建博客的实用功能(下)(基于hexo3.0)">
+             <span id="/2016/03/13/push-hexo-to-github-and-coding/" class="leancloud_visitors" data-flag-title="将hexo博客同时托管到github和coding">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -328,24 +329,12 @@
       
 
       
-        <h2 id="前言">前言</h2><p>上一节讲到了很多个博客使用的功能，这一节将继续介绍其他的使用功能。<br><a id="more"></a></p>
-<h2 id="正文">正文</h2><h3 id="添加RSS">添加RSS</h3><p>1.安装RSS插件：<code>$ npm install hexo-generator-feed --save</code><br>2.对<code>E:\hexo\_config.yml</code>添加如下配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: <span class="number">20</span></span><br></pre></td></tr></table></figure></p>
-<p>3.对<code>E:\hexo\themes\light\_config.yml</code>进行如下配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure></p>
-<p>4.如果已经有RSS一栏，则不用执行此步。在<code>E:\hexo\themes\light\layout\_partial\header.ejs</code>中，找到<code>&lt;ul&gt;&lt;/ul&gt;</code>,在<code>&lt;ul&gt;&lt;/ul&gt;</code>之间添加<code>&lt;li&gt; &lt;a href=&quot;/atom.xml&quot;&gt;RSS&lt;/a&gt; &lt;/li&gt;</code>。<br>5.将<code>E:\hexo\_config.yml</code>中的url添加为自己的网址。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: http://opiece.me</span><br></pre></td></tr></table></figure></p>
-<h3 id="添加sitemap">添加sitemap</h3><p>1.安装sitemap插件：<code>$ npm install hexo-generator-sitemap --save</code><br>2.对<code>E:\hexo\_config.yml</code>添加如下配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
-<p>3.访问<code>opiece.me/sitemap.xml</code>，此处记得将<code>opiece.me</code>改成你的域名</p>
-<h3 id="添加最新评论">添加最新评论</h3><p>1.在<code>E:\hexo\themes\light\_config.yml</code>的widgets下添加<code>- recent_comments</code><br>2.在<code>E:\hexo\themes\light\layout\_widget</code>下添加<code>recent_comments.ejs</code>文件，并填入如下代码，记得将short_name改为你自己的多说short_name。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"widget tag"</span>&gt;</span><br><span class="line">&lt;h3 class=<span class="string">"title"</span>&gt;最新评论&lt;/h3&gt;</span><br><span class="line">&lt;div class=<span class="string">"entry"</span>&gt;</span><br><span class="line">&lt;!-- 多说最新评论 start --&gt;</span><br><span class="line">	&lt;div class=<span class="string">"ds-recent-comments"</span> data-num-items=<span class="string">"5"</span> data-show-avatars=<span class="string">"1"</span> data-show-time=<span class="string">"1"</span> data-show-title=<span class="string">"1"</span> data-show-admin=<span class="string">"1"</span> data-excerpt-length=<span class="string">"70"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;!-- 多说最新评论 end --&gt;</span><br><span class="line">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">	&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">	var duoshuoQuery = &#123;short_name:<span class="string">"chillax"</span>&#125;;</span><br><span class="line">	(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">		var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">		ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">		ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">		ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">		(document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">		 || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">	&#125;)();</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>3.在<code>E:\hexo\themes\light\languages\zh-CN.yml</code>添加<code>recent_comments: 最新评论</code><br>4.此步是针对本主题的界面优化，其他主题可以自由选择是否合适。在<code>E:\hexo\themes\light\source\css\_partial</code>中添加文件<code>recent_comment.styl</code>，并填入如下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.ds-recent-comments</span><br><span class="line">  li.ds-comment</span><br><span class="line">    &amp;:first-child</span><br><span class="line">      border-top none !important</span><br></pre></td></tr></table></figure></p>
-<p>5.在<code>E:\hexo\themes\light\source\css\style.styl</code>添加<code>@import &#39;_partial/recent_comment&#39;</code></p>
-<h3 id="添加文章导航">添加文章导航</h3><p>1.在<code>E:\hexo\themes\light\layout\_partial\post\article.ejs</code>找到<code>&lt;%- item.content %&gt;</code>,在<code>&lt;%- item.content %&gt;</code>上方插入如下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span>(!index &amp;&amp; item.toc == <span class="literal">true</span>)&#123; %&gt;</span><br><span class="line">	&lt;div id=<span class="string">"toc"</span> class=<span class="string">"toc-article"</span>&gt;</span><br><span class="line">		&lt;strong class=<span class="string">"toc-title"</span>&gt;文章目录&lt;/strong&gt;</span><br><span class="line">		&lt;%- toc(item.content) %&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>2.在<code>E:\hexo\themes\light\source\css\_partial\article.styl</code>的最后填入如下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">.toc-article</span><br><span class="line">  <span class="built_in">float</span> right</span><br><span class="line">   </span><br><span class="line"><span class="comment">#toc</span></span><br><span class="line">  background <span class="comment">#eee</span></span><br><span class="line">  margin <span class="number">0</span> <span class="number">0</span> <span class="number">10</span>px <span class="number">20</span>px</span><br><span class="line">  padding <span class="number">12</span>px</span><br><span class="line">  line-height <span class="number">18</span>px</span><br><span class="line">  font-size <span class="number">10</span>px</span><br><span class="line">  strong</span><br><span class="line">    font-size <span class="number">15</span>px</span><br><span class="line">  ol</span><br><span class="line">    margin-top <span class="number">5</span>px</span><br><span class="line">    margin-left <span class="number">0</span></span><br><span class="line">  .toc</span><br><span class="line">    padding <span class="number">0</span></span><br><span class="line">    li</span><br><span class="line">      list-style-type none</span><br><span class="line">  .toc-child</span><br><span class="line">    padding-left <span class="number">20</span>px</span><br></pre></td></tr></table></figure></p>
-<p>3.在要使用文章导航的文章首部加入<code>toc: true</code></p>
-<h3 id="添加返回顶部">添加返回顶部</h3><p>1.在<code>E:\hexo\themes\light\layout\_partial</code>中添加文件<code>totop.ejs</code>,在文件中添加以下代码，如果你对返回顶部按钮的位置不满意，可以在下面这段代码的style里面进行参数修改，bottom是按钮相对于窗口底部的位置，right是按钮相对于窗口右部的位置。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"totop"</span> style=<span class="string">"position:fixed;bottom:150px;right:20px;cursor: pointer;"</span>&gt;</span><br><span class="line">&lt;a title=<span class="string">"返回顶部"</span>&gt;&lt;img src=<span class="string">"/imgs/scrollup.png"</span>/&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>2.在<code>E:\hexo\themes\light\source\js</code>中添加文件<code>totop.js</code>，在文件中添加以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>($) &#123; </span><br><span class="line">	// When to show the scroll link</span><br><span class="line">	// higher number = scroll link appears further down the page：显示返回顶部的位置</span><br><span class="line">	var upperLimit = <span class="number">1000</span>;</span><br><span class="line">	</span><br><span class="line">	// Our scroll link element</span><br><span class="line">	var scrollElem = $(<span class="string">'#totop'</span>);</span><br><span class="line">   </span><br><span class="line">	// Scroll to top speed：回滚速度</span><br><span class="line">	var scrollSpeed = <span class="number">500</span>;</span><br><span class="line">   </span><br><span class="line">	// Show and hide the scroll to top link based on scroll position   </span><br><span class="line">	scrollElem.hide();</span><br><span class="line">	$(window).scroll(<span class="function"><span class="title">function</span></span> () &#123;            </span><br><span class="line">		var scrollTop = $(document).scrollTop();       </span><br><span class="line">		<span class="keyword">if</span> ( scrollTop &gt; upperLimit ) &#123;</span><br><span class="line">			$(scrollElem).stop().fadeTo(<span class="number">300</span>, <span class="number">1</span>); // fade back <span class="keyword">in</span>           </span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;       </span><br><span class="line">			$(scrollElem).stop().fadeTo(<span class="number">300</span>, <span class="number">0</span>); // fade out</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	// Scroll to top animation on click</span><br><span class="line">	$(scrollElem).click(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		$(<span class="string">'html, body'</span>).animate(&#123;scrollTop:<span class="number">0</span>&#125;, scrollSpeed); <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;)(jQuery);</span><br></pre></td></tr></table></figure></p>
-<p>3.添加对以上两段代码的引用，在<code>E:\hexo\themes\light\layout\_partial\after_footer.ejs</code>中的最下面，添加以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(<span class="string">'totop'</span>) %&gt;</span><br><span class="line">&lt;script src=<span class="string">"&lt;%- config.root %&gt;js/totop.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>4.添加返回顶部按钮的图片，选择自己想要用的图片，将图片复制到<code>E:\hexo\themes\light\source\imgs</code>目录下，并将图片名字改为<code>scrollup.png</code>即可。<br>5.使用<code>$ hexo g</code>和<code>hexo d</code>发布，查看效果。</p>
-<h3 id="参考">参考</h3><p><a href="http://kevinsfork.info/2015/02/25/hexo-light-enhance/" target="_blank" rel="external">Hexo折腾笔记（二）博客优化与定制</a><br><a href="http://wuchong.me/blog/2014/01/08/hexo-scrollup/" target="_blank" rel="external">Hexo博客优化：添加返回顶部功能</a></p>
-<p>如果在搭建过程中，出现任何问题，欢迎留言，我会尽力帮您解决。</p>
+        <h2 id="动机">动机</h2><p>之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被<img src="https://coding.net/" alt="coding">吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测试后，成功将国内托管平台从gitcafe换成了coding。<br><a id="more"></a></p>
+<h2 id="正文">正文</h2><p>1.将博客根目录下的<code>_config.yml</code>的deploy修改成类似以下代码即可。我这边提交采用的SSH密钥，这个方法有个好处，提交的时候不用输入用户名和密码，但是需要在github和coding上设置SSH密钥。如果你习惯用http的方式，只要将地址改成相应的http地址即可。注意：1)如果你的项目是从gitcafe迁移过来的，分支可能需要修改成gitcafe-pages，当然你也可以去coding上修改分支名字，改成master。2)使用notepad++编辑配置文件时，这段代码的左边只能有两个减号，否则会出现错误。<br>！<a href="/images/article/push-hexo-to-github-and-coding-1.png"></a></p>
+<p>2.在博客根路径<code>E:\myblog</code>，右键进入<code>git bash</code>命令行，执行以下命令，然后在coding的项目代码中查看是否已经推送成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> <span class="built_in">source</span></span><br><span class="line">$ touch Staticfile</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>3.进入coding中的项目，开启pages服务，并绑定自己的域名<br>！<a href="/images/article/push-hexo-to-github-and-coding-2.png"></a></p>
+<p>4.进入自己的域名管理中心，将CNAME记录指向<code>pages.coding.me</code>，这个值参考pages页面的<br>！<a href="/images/article/push-hexo-to-github-and-coding-3.png"></a></p>
+<h2 id="结语">结语</h2><p>如有任何问题，欢迎留言。</p>
 
       
     </div>
@@ -360,15 +349,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/RSS/" rel="tag">#RSS</a>
-          
-            <a href="/tags/Sitemap/" rel="tag">#Sitemap</a>
-          
             <a href="/tags/hexo/" rel="tag">#hexo</a>
-          
-            <a href="/tags/文章导航/" rel="tag">#文章导航</a>
-          
-            <a href="/tags/返回顶部/" rel="tag">#返回顶部</a>
           
         </div>
       
@@ -377,17 +358,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/04/09/hexo-guide-2/" rel="next" title="hexo搭建博客的实用功能(上)(基于hexo3.0)">
-                <i class="fa fa-chevron-left"></i> hexo搭建博客的实用功能(上)(基于hexo3.0)
+              <a href="/2016/03/12/concise-to-next/" rel="next" title="Concise主题转Next主题">
+                <i class="fa fa-chevron-left"></i> Concise主题转Next主题
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/04/16/site-search-by-swiftype/" rel="prev" title="使用swiftype实现站内搜索">
-                使用swiftype实现站内搜索 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -402,10 +379,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/04/16/hexo-guide-3/"
-     data-title="hexo搭建博客的实用功能(下)(基于hexo3.0)"
+        <div class="ds-share flat" data-thread-key="2016/03/13/push-hexo-to-github-and-coding/"
+     data-title="将hexo博客同时托管到github和coding"
      data-content=""
-     data-url="http://opiece.me/2015/04/16/hexo-guide-3/">
+     data-url="http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -432,8 +409,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/04/16/hexo-guide-3/"
-           data-title="hexo搭建博客的实用功能(下)(基于hexo3.0)" data-url="http://opiece.me/2015/04/16/hexo-guide-3/">
+      <div class="ds-thread" data-thread-key="2016/03/13/push-hexo-to-github-and-coding/"
+           data-title="将hexo博客同时托管到github和coding" data-url="http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/">
       </div>
     
   </div>
@@ -542,7 +519,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加RSS"><span class="nav-number">2.1.</span> <span class="nav-text">添加RSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加sitemap"><span class="nav-number">2.2.</span> <span class="nav-text">添加sitemap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加最新评论"><span class="nav-number">2.3.</span> <span class="nav-text">添加最新评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加文章导航"><span class="nav-number">2.4.</span> <span class="nav-text">添加文章导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加返回顶部"><span class="nav-number">2.5.</span> <span class="nav-text">添加返回顶部</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">2.6.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#动机"><span class="nav-number">1.</span> <span class="nav-text">动机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
