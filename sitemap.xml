@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2016/03/17/test/</loc>
+    <lastmod>2016-03-17T03:58:30.132Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2016/03/17/maven-and-ssmframework/</loc>
-    <lastmod>2016-03-17T03:44:02.542Z</lastmod>
+    <lastmod>2016-03-17T03:51:00.067Z</lastmod>
   </url>
   
   <url>
