@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="maven,mybatis,spring,spring mvc," />
+  <meta name="keywords" content="maven,mybatis,spring," />
 
 
 
@@ -62,7 +62,7 @@
 <meta name="description" content="前言使用maven已经有一段时间了，但项目是别人搭建好的，因此一直想着自己要学习搭建一下。网上找了些资料后，结合自己实验，花了点时间就搞好，老样子，写在博客上，免得日后忘记。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
-<meta property="og:url" content="http://opiece.me/2016/03/17/maven-and-ssmframework/index.html">
+<meta property="og:url" content="http://opiece.me/2016/03/17/maven-and-ssm-framework/index.html">
 <meta property="og:site_name" content="Chillax's Blog">
 <meta property="og:description" content="前言使用maven已经有一段时间了，但项目是别人搭建好的，因此一直想着自己要学习搭建一下。网上找了些资料后，结合自己实验，花了点时间就搞好，老样子，写在博客上，免得日后忘记。">
 <meta property="og:image" content="/images/article/maven-and-ssmframework-4-1.jpg">
@@ -293,7 +293,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-17T10:44:00+08:00" content="2016-03-17">
+            <time itemprop="dateCreated" datetime="2016-03-17T11:24:53+08:00" content="2016-03-17">
               2016-03-17
             </time>
           </span>
@@ -323,8 +323,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/17/maven-and-ssmframework/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/maven-and-ssmframework/" itemprop="commentsCount"></span>
+                <a href="/2016/03/17/maven-and-ssm-framework/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/maven-and-ssm-framework/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -334,7 +334,7 @@
 
           
           
-             <span id="/2016/03/17/maven-and-ssmframework/" class="leancloud_visitors" data-flag-title="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
+             <span id="/2016/03/17/maven-and-ssm-framework/" class="leancloud_visitors" data-flag-title="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -385,7 +385,7 @@
 <p>解答：在MyEclipse的安装目录找到myeclipse.ini，将分配的内存加大<br><img src="/images/article/maven-and-ssmframework-17.jpg" alt=""><br><strong>问题3：新建完工程后出现以下错误？</strong><br><img src="/images/article/maven-and-ssmframework-10.jpg" alt=""><br>解答：在pom.xml添加以下代码即可，添加完代码就会自动下载好jar包<br><img src="/images/article/maven-and-ssmframework-11.jpg" alt=""></p>
 <p><strong>问题4：出现如下图错误</strong><br><img src="/images/article/maven-and-ssmframework-18-1.jpg" alt=""><br>解答：<br><img src="/images/article/maven-and-ssmframework-18-2.jpg" alt=""></p>
 <p><strong>问题5：出现以下错误</strong><br><img src="/images/article/maven-and-ssmframework-22.jpg" alt=""><br>解答：将项目的jre版本换成1.7或者以上的版本即可</p>
-<p><strong>问题6：配置pom.xml文件后，下载jar包时出现以下错误</strong><br><img src="/images/article/maven-and-ssmframework-19.jpg" alt=""><br>解答：在本地仓库找到错误所对应的jar包文件夹，将文件夹内的文件删除(出现这个错误时，文件夹内一般只有1个错误的文件)<br><img src="/images/article/maven-and-ssmframework-20.jpg" alt=""><br>在pom.xml中把关于这个jar包的配置代码删除保存，再重新把配置代码添加保存，让MyEclipse重新下载即可，下载成功后，文件夹内的内容应该如下图所示<br><img src="/images/article/maven-and-ssmframework-21.jpg" alt=""></p>
+<p><strong>问题6：配置pom.xml文件后，下载jar包时出现以下错误</strong><br><img src="/images/article/maven-and-ssmframework-19.jpg" alt=""><br>解答：在本地仓库找到错误所对应的jar包文件夹，将文件夹内的文件删除(出现这个错误时，文件夹内一般只有1个错误的文件)<br><img src="/images/article/maven-and-ssmframework-20.jpg" alt=""><br>在pom.xml中把关于这个jar包的配置代码删除保存，再重新把配置代码添加保存，让MyEclipse重新下载即可，下载成功后，文件夹内的内容应该如下图所示<br><img src="/images/article/maven-and-ssmframework-21.jpg" alt="">      </p>
 
       
     </div>
@@ -406,8 +406,6 @@
           
             <a href="/tags/spring/" rel="tag">#spring</a>
           
-            <a href="/tags/spring-mvc/" rel="tag">#spring mvc</a>
-          
         </div>
       
 
@@ -415,17 +413,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/13/push-hexo-to-github-and-coding/" rel="next" title="将hexo博客同时托管到github和coding">
-                <i class="fa fa-chevron-left"></i> 将hexo博客同时托管到github和coding
+              <a href="/2016/03/17/maven-and-ssmframework/" rel="next" title="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
+                <i class="fa fa-chevron-left"></i> MyEclipse使用Maven创建web项目+搭建SSM框架教程
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/17/maven-and-ssm-framework/" rel="prev" title="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
-                MyEclipse使用Maven创建web项目+搭建SSM框架教程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -440,10 +434,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/17/maven-and-ssmframework/"
+        <div class="ds-share flat" data-thread-key="2016/03/17/maven-and-ssm-framework/"
      data-title="MyEclipse使用Maven创建web项目+搭建SSM框架教程"
      data-content=""
-     data-url="http://opiece.me/2016/03/17/maven-and-ssmframework/">
+     data-url="http://opiece.me/2016/03/17/maven-and-ssm-framework/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -470,8 +464,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/17/maven-and-ssmframework/"
-           data-title="MyEclipse使用Maven创建web项目+搭建SSM框架教程" data-url="http://opiece.me/2016/03/17/maven-and-ssmframework/">
+      <div class="ds-thread" data-thread-key="2016/03/17/maven-and-ssm-framework/"
+           data-title="MyEclipse使用Maven创建web项目+搭建SSM框架教程" data-url="http://opiece.me/2016/03/17/maven-and-ssm-framework/">
       </div>
     
   </div>
