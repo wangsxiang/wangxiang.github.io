@@ -74,8 +74,8 @@
     <link href="http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/"/>
     <id>http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/</id>
     <published>2016-03-13T11:21:30.000Z</published>
-    <updated>2016-03-17T06:02:52.105Z</updated>
-    <content type="html"><![CDATA[<h2 id="动机">动机</h2><p>以前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被<a href="https://coding.net/" target="_blank" rel="external">coding</a>吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测试后，成功将国内托管平台从gitcafe换成了coding。<br><a id="more"></a></p>
+    <updated>2016-03-17T06:35:06.292Z</updated>
+    <content type="html"><![CDATA[<h2 id="动机">动机</h2><p>之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被<a href="https://coding.net/" target="_blank" rel="external">coding</a>吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测试后，成功将国内托管平台从gitcafe换成了coding。<br><a id="more"></a></p>
 <h2 id="正文">正文</h2><p>1.将博客根目录下的<code>_config.yml</code>的deploy修改成类似以下代码即可。我这边提交采用的SSH密钥，这个方法有个好处，提交的时候不用输入用户名和密码，但是需要在github和coding上设置SSH密钥。如果你习惯用http的方式，只要将地址改成相应的http地址即可。注意：1)如果你的项目是从gitcafe迁移过来的，分支可能需要修改成gitcafe-pages，当然你也可以去coding上修改分支名字，改成master。2)使用notepad++编辑配置文件时，这段代码的左边只能有两个减号，否则会出现错误。<br><img src="/images/article/push-hexo-to-github-and-coding-1.png" alt=""></p>
 <p>2.在博客根路径<code>E:\myblog</code>，右键进入<code>git bash</code>命令行，执行以下命令，然后在coding的项目代码中查看是否已经推送成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> <span class="built_in">source</span></span><br><span class="line">$ touch Staticfile</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
 <p>3.进入coding中的项目，开启pages服务，并绑定自己的域名<br><img src="/images/article/push-hexo-to-github-and-coding-2.png" alt=""></p>
@@ -83,7 +83,7 @@
 <h2 id="结语">结语</h2><p>如有任何问题，欢迎留言。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="动机">动机</h2><p>以前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被<a href="https://coding.net/">coding</a>吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测试后，成功将国内托管平台从gitcafe换成了coding。<br>]]>
+    <![CDATA[<h2 id="动机">动机</h2><p>之前，本人是把博客托管在github和gitcafe上，设置成国内访问gitcafe，国外访问github。但是最近发现gitcafe已经被<a href="https://coding.net/">coding</a>吞并了，并在2016年5月31日停止所有服务，提示将项目迁移到coding上。因此，便在coding上注册了个帐号，把项目迁移到coding上。迁移后，发现已经无法将代码推送到gitcafe，于是便想着把国内的托管平台换成coding，查了些资料，做了点测试后，成功将国内托管平台从gitcafe换成了coding。<br>]]>
     
     </summary>
     
