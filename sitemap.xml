@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://opiece.me/2016/03/17/nio-read-and-write-large-file/</loc>
+    <lastmod>2016-03-17T08:38:20.379Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://opiece.me/2016/03/13/push-hexo-to-github-and-coding/</loc>
     <lastmod>2016-03-17T06:35:06.292Z</lastmod>
   </url>

@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,笔记," />
+  <meta name="keywords" content="NIO,读取大文件," />
 
 
 
@@ -59,26 +59,16 @@
 
 
 
-<meta name="description" content="前言因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。">
+<meta name="description" content="前言最近在开发的时候，接到了一个开发任务，要将百万行级别的txt数据插入到数据库中，由于内存方面的原因，因此不可能一次读取所有内容，后来在网上找到了解决方法，可以使用NIO技术来处理，于是找到了这篇文章http://www.sharejs.com/codes/java/1334，后来在试验过程中发现了一点小bug，由于是按字节读取，汉字又是2个字节，因此会出现汉字读取“一半”导致乱码的情况，于是花">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《Head_First_Python》阅读笔记(7、11章)">
-<meta property="og:url" content="http://opiece.me/2015/04/24/head-first-python-reading-notes-2/index.html">
+<meta property="og:title" content="JAVA之NIO按行读写大文件，完美解决中文乱码问题">
+<meta property="og:url" content="http://opiece.me/2016/03/17/nio-read-and-write-large-file/index.html">
 <meta property="og:site_name" content="Chillax's Blog">
-<meta property="og:description" content="前言因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。">
-<meta property="og:image" content="http://i1.tietuku.com/a27070c02dcb9b54.png">
-<meta property="og:image" content="http://i1.tietuku.com/0640482f9330e006.png">
-<meta property="og:image" content="http://i1.tietuku.com/96f4e8126135f1e6.png">
-<meta property="og:image" content="http://i1.tietuku.com/b321d2007525974e.png">
-<meta property="og:image" content="http://i1.tietuku.com/71abb9a635ade47a.png">
-<meta property="og:image" content="http://i1.tietuku.com/1eff51ce6f99ad2a.png">
-<meta property="og:image" content="http://i1.tietuku.com/80c2440097c874fd.png">
-<meta property="og:image" content="http://i1.tietuku.com/8000a7bd3ff80f5e.png">
-<meta property="og:image" content="http://i1.tietuku.com/3ed21e3799f0129b.png">
-<meta property="og:image" content="http://i1.tietuku.com/b187eef6a3b1915f.png">
-<meta property="og:image" content="http://i1.tietuku.com/63a990d4f54829ab.png">
+<meta property="og:description" content="前言最近在开发的时候，接到了一个开发任务，要将百万行级别的txt数据插入到数据库中，由于内存方面的原因，因此不可能一次读取所有内容，后来在网上找到了解决方法，可以使用NIO技术来处理，于是找到了这篇文章http://www.sharejs.com/codes/java/1334，后来在试验过程中发现了一点小bug，由于是按字节读取，汉字又是2个字节，因此会出现汉字读取“一半”导致乱码的情况，于是花">
+<meta property="og:image" content="/images/article/nio-read-and-write-large-file-1.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《Head_First_Python》阅读笔记(7、11章)">
-<meta name="twitter:description" content="前言因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。">
+<meta name="twitter:title" content="JAVA之NIO按行读写大文件，完美解决中文乱码问题">
+<meta name="twitter:description" content="前言最近在开发的时候，接到了一个开发任务，要将百万行级别的txt数据插入到数据库中，由于内存方面的原因，因此不可能一次读取所有内容，后来在网上找到了解决方法，可以使用NIO技术来处理，于是找到了这篇文章http://www.sharejs.com/codes/java/1334，后来在试验过程中发现了一点小bug，由于是按字节读取，汉字又是2个字节，因此会出现汉字读取“一半”导致乱码的情况，于是花">
 
 
 
@@ -96,7 +86,7 @@
   };
 </script>
 
-  <title> 《Head_First_Python》阅读笔记(7、11章) | Chillax's Blog </title>
+  <title> JAVA之NIO按行读写大文件，完美解决中文乱码问题 | Chillax's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +255,7 @@
             
             
               
-                《Head_First_Python》阅读笔记(7、11章)
+                JAVA之NIO按行读写大文件，完美解决中文乱码问题
               
             
           </h1>
@@ -277,8 +267,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-04-24T15:03:57+08:00" content="2015-04-24">
-              2015-04-24
+            <time itemprop="dateCreated" datetime="2016-03-17T16:28:59+08:00" content="2016-03-17">
+              2016-03-17
             </time>
           </span>
 
@@ -291,8 +281,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
+                  <a href="/categories/NIO/" itemprop="url" rel="index">
+                    <span itemprop="name">NIO</span>
                   </a>
                 </span>
 
@@ -307,8 +297,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/04/24/head-first-python-reading-notes-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/24/head-first-python-reading-notes-2/" itemprop="commentsCount"></span>
+                <a href="/2016/03/17/nio-read-and-write-large-file/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/nio-read-and-write-large-file/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,7 +308,7 @@
 
           
           
-             <span id="/2015/04/24/head-first-python-reading-notes-2/" class="leancloud_visitors" data-flag-title="《Head_First_Python》阅读笔记(7、11章)">
+             <span id="/2016/03/17/nio-read-and-write-large-file/" class="leancloud_visitors" data-flag-title="JAVA之NIO按行读写大文件，完美解决中文乱码问题">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -339,31 +329,9 @@
       
 
       
-        <h2 id="前言">前言</h2><p>因为第8，9章讲的是Android方面的，第10章用到了Google App Engine，所以这三章本人选择跳过。算是马马虎虎把这本书给读完了吧，花的时间比预计的多，之间跑去搞了会hexo主题的事情，因此延后了阅读的时间。总体来说，本书的质量还是不错的，适合Python入门，但想要深入理解Python肯定需要再看其他书籍。<br><a id="more"></a></p>
-<h2 id="正文">正文</h2><h3 id="第七章：web开发">第七章：web开发</h3><p><strong>生成html的辅助函数yate.py</strong></p>
-<p><img src="http://i1.tietuku.com/a27070c02dcb9b54.png" alt=""><br><img src="http://i1.tietuku.com/0640482f9330e006.png" alt=""></p>
-<p><strong>使用Python构建一个web服务器</strong></p>
-<p><img src="http://i1.tietuku.com/96f4e8126135f1e6.png" alt=""></p>
-<p><strong>调用yate.py生成html页面，显示选手列表</strong></p>
-<p><img src="http://i1.tietuku.com/b321d2007525974e.png" alt=""></p>
-<p><strong>调用yate.py生成html页面，显示选手最快的三个成绩</strong></p>
-<p><img src="http://i1.tietuku.com/71abb9a635ade47a.png" alt=""></p>
-<p><strong>Python术语：</strong><br>“@property”：这时一个修饰符，可以使类方法表现得像是一个类属性。<br>Web术语：<br>“CGI”：通用网关接口，允许web服务器运行一个服务器端程序。</p>
-<p><strong>知识点：</strong><br>标准库string模块包括一个名为Template的类，它支持简单的字符串替换。<br>标准库http.server模块可以用来在Python中建立一个简单的web服务器。<br>标准库CGI模块对编写CGI脚本提供了支持。<br>标准库glob模块非常适合处理文件名列表。<br>启用标准库cgitb模块时，允许在浏览器中查看CGI编码错误。<br>CGI代码中可以使用cgitb.enable()打开CGI跟踪。<br>可以使用cgi.FieldStorage()访问作为web请求一部分发送给web服务器的数据，数据将作为一个Python字典。</p>
-<h3 id="第十一章：数据加工">第十一章：数据加工</h3><p>一个预测跑步时间的例子：</p>
-<p><strong>1.数据文件：</strong>总共有50列，只截出部分。</p>
-<p><img src="http://i1.tietuku.com/1eff51ce6f99ad2a.png" alt=""></p>
-<p><strong>2.辅助函数：</strong></p>
-<p><img src="http://i1.tietuku.com/80c2440097c874fd.png" alt=""><br><img src="http://i1.tietuku.com/8000a7bd3ff80f5e.png" alt=""></p>
-<p><strong>3.主函数：</strong></p>
-<p><img src="http://i1.tietuku.com/3ed21e3799f0129b.png" alt=""></p>
-<p><strong>4.测试：</strong></p>
-<p><img src="http://i1.tietuku.com/b187eef6a3b1915f.png" alt=""></p>
-<p><img src="http://i1.tietuku.com/63a990d4f54829ab.png" alt=""></p>
-<p><strong>数据分析：</strong><br>图中步骤1：通过输入的distance_run(20k)和recorded_time(59:59)，计算出distance_run对应的行最接近recorded_time的时间，即1:00:23；步骤2为根据distance_run和1:00:23，计算出的VO2值，即79.3，步骤三为根据79.3和predicted_distance(Marathon)，计算出预测的时间，即2:14:15。</p>
-<p><strong>Python术语：</strong><br>“条件”列表推导尾部包括一个“if”语句，允许在推导运行时控制哪些项可以增加到新列表中。<br>列表推导可以重写为一个等价的“for”循环。</p>
-<p><strong>知识点：</strong><br>input()BIF允许为用户提供提示语并接收输入。<br>time模块作为标准库的一部分，包含了大量函数可以完成时间格式之间的转换。</p>
-
+        <h2 id="前言">前言</h2><p>最近在开发的时候，接到了一个开发任务，要将百万行级别的txt数据插入到数据库中，由于内存方面的原因，因此不可能一次读取所有内容，后来在网上找到了解决方法，可以使用<a href="http://www.iteye.com/magazines/132-Java-NIO" target="_blank" rel="external">NIO</a>技术来处理，于是找到了这篇文章<a href="http://www.sharejs.com/codes/java/1334" target="_blank" rel="external">http://www.sharejs.com/codes/java/1334</a>，后来在试验过程中发现了一点小bug，由于是按字节读取，汉字又是2个字节，因此会出现汉字读取“一半”导致乱码的情况，于是花了几天时间将这个问题解决了。<br><a id="more"></a></p>
+<h2 id="正文">正文</h2><p>通过例子来说明解决的方法：<br>假设我们一次读取的字节是从下图的start到end，因为结尾是汉字，所以有几率出现上述的情况。<br>解决方法如下：将第9行这半行(第9行阴影的部分)跟上一次读取留下来的半行(第9行没阴影的部分)按顺序存放在字节数组，然后转成字符串；中间第10行到第17行正常转换成字符串；第18行这半行(第18行阴影的部分)留着跟下一次读取的第1行(第18行没阴影的部分)连接成一行，因为是先拼接成字节数组再转字符串，因此不会出现乱码的情况。<br><img src="/images/article/nio-read-and-write-large-file-1.jpg" alt=""></p>
+<h2 id="代码">代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line">import java.io.File;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.RandomAccessFile;</span><br><span class="line">import java.nio.ByteBuffer;</span><br><span class="line">import java.nio.channels.FileChannel;</span><br><span class="line">import java.util.Date;</span><br><span class="line"></span><br><span class="line">public class TestNIO3 &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String args[]) throws Exception &#123;</span><br><span class="line"></span><br><span class="line">		int bufSize = <span class="number">1000000</span>;//一次读取的字节长度</span><br><span class="line">		File fin = new File(<span class="string">"D:\\test\\20151224_1375789.txt"</span>);//读取的文件</span><br><span class="line">		File fout = new File(<span class="string">"D:\\test\\111111111111111111.txt"</span>);//写出的文件</span><br><span class="line">		Date startDate = new Date();</span><br><span class="line">		FileChannel fcin = new RandomAccessFile(fin, <span class="string">"r"</span>).getChannel();</span><br><span class="line">		ByteBuffer rBuffer = ByteBuffer.allocate(bufSize);</span><br><span class="line"></span><br><span class="line">		FileChannel fcout = new RandomAccessFile(fout, <span class="string">"rws"</span>).getChannel();</span><br><span class="line">		ByteBuffer wBuffer = ByteBuffer.allocateDirect(bufSize);</span><br><span class="line"></span><br><span class="line">		<span class="built_in">read</span>FileByLine(bufSize, fcin, rBuffer, fcout, wBuffer);</span><br><span class="line">		Date endDate = new Date();</span><br><span class="line">		</span><br><span class="line">		System.out.print(startDate+<span class="string">"|"</span>+endDate);//测试执行时间</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public static void <span class="built_in">read</span>FileByLine(int bufSize, FileChannel fcin,</span><br><span class="line">			ByteBuffer rBuffer, FileChannel fcout, ByteBuffer wBuffer) &#123;</span><br><span class="line">		String enterStr = <span class="string">"\n"</span>;</span><br><span class="line">		try &#123;</span><br><span class="line">			byte[] bs = new byte[bufSize];</span><br><span class="line">			//temp：由于是按固定字节读取，在一次读取中，第一行和最后一行经常是不完整的行，因此定义此变量来存储上次的最后一行和这次的第一行的内容，</span><br><span class="line">			//并将之连接成完成的一行，否则会出现汉字被拆分成<span class="number">2</span>个字节，并被提前转换成字符串而乱码的问题，数组大小应大于文件中最长一行的字节数</span><br><span class="line">			byte[] temp = new byte[<span class="number">500</span>];</span><br><span class="line">			<span class="keyword">while</span> (fcin.read(rBuffer) != -<span class="number">1</span>) &#123;</span><br><span class="line">				int rSize = rBuffer.position();</span><br><span class="line">				rBuffer.rewind();</span><br><span class="line">				rBuffer.get(bs);</span><br><span class="line">				rBuffer.clear();</span><br><span class="line">				</span><br><span class="line">				//windows下ascii值<span class="number">13</span>、<span class="number">10</span>是换行和回车，unix下ascii值<span class="number">10</span>是换行</span><br><span class="line">				//从开头顺序遍历，找到第一个换行符</span><br><span class="line">				int startNum=<span class="number">0</span>;</span><br><span class="line">				int length=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">for</span>(int i=<span class="number">0</span>;i&lt;rSize;i++)&#123;</span><br><span class="line">					<span class="keyword">if</span>(bs[i]==<span class="number">10</span>)&#123;//找到换行字符</span><br><span class="line">						startNum=i;</span><br><span class="line">						<span class="keyword">for</span>(int k=<span class="number">0</span>;k&lt;<span class="number">500</span>;k++)&#123;</span><br><span class="line">							<span class="keyword">if</span>(temp[k]==<span class="number">0</span>)&#123;//temp已经存储了上一次读取的最后一行，因此遍历找到空字符位置，继续存储此次的第一行内容，连接成完成一行</span><br><span class="line">								length=i+k;</span><br><span class="line">								<span class="keyword">for</span>(int j=<span class="number">0</span>;j&lt;=i;j++)&#123;</span><br><span class="line">									temp[k+j]=bs[j];</span><br><span class="line">								&#125;</span><br><span class="line">								<span class="built_in">break</span>;</span><br><span class="line">							&#125;</span><br><span class="line">						&#125;</span><br><span class="line">						<span class="built_in">break</span>;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				//将拼凑出来的完整的一行转换成字符串</span><br><span class="line">				String tempString1 = new String(temp, <span class="number">0</span>, length+<span class="number">1</span>, <span class="string">"GBK"</span>);</span><br><span class="line">				//清空temp数组</span><br><span class="line">				<span class="keyword">for</span>(int i=<span class="number">0</span>;i&lt;temp.length;i++)&#123;</span><br><span class="line">					temp[i]=<span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				//从末尾倒序遍历，找到第一个换行符</span><br><span class="line">				int endNum=<span class="number">0</span>;</span><br><span class="line">				int k = <span class="number">0</span>;</span><br><span class="line">				<span class="keyword">for</span>(int i=rSize-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">					<span class="keyword">if</span>(bs[i]==<span class="number">10</span>)&#123;</span><br><span class="line">						endNum=i;//记录最后一个换行符的位置</span><br><span class="line">						<span class="keyword">for</span>(int j=i+<span class="number">1</span>;j&lt;rSize;j++)&#123;</span><br><span class="line">							temp[k++]=bs[j];//将此次读取的最后一行的不完整字节存储在temp数组，用来跟下一次读取的第一行拼接成完成一行</span><br><span class="line">							bs[j]=<span class="number">0</span>;</span><br><span class="line">						&#125;</span><br><span class="line">						<span class="built_in">break</span>;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				//去掉第一行和最后一行不完整的，将中间所有完整的行转换成字符串</span><br><span class="line">				String tempString2 = new String(bs, startNum+<span class="number">1</span>, endNum-startNum, <span class="string">"GBK"</span>);</span><br><span class="line">				</span><br><span class="line">				//拼接两个字符串</span><br><span class="line">				String tempString = tempString1 + tempString2;</span><br><span class="line">//				System.out.print(tempString);</span><br><span class="line">				</span><br><span class="line">				int fromIndex = <span class="number">0</span>;</span><br><span class="line">				int endIndex = <span class="number">0</span>;</span><br><span class="line">				<span class="keyword">while</span> ((endIndex = tempString.indexOf(enterStr, fromIndex)) != -<span class="number">1</span>) &#123;</span><br><span class="line">					String line = tempString.substring(fromIndex, endIndex)+enterStr;//按行截取字符串</span><br><span class="line">					System.out.print(line);</span><br><span class="line">					//写入文件</span><br><span class="line">					writeFileByLine(fcout, wBuffer, line);</span><br><span class="line"></span><br><span class="line">					fromIndex = endIndex + <span class="number">1</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * 写到文件上</span><br><span class="line">	 * @param fcout</span><br><span class="line">	 * @param wBuffer</span><br><span class="line">	 * @param line</span><br><span class="line">	 */</span><br><span class="line">	@SuppressWarnings(<span class="string">"static-access"</span>)</span><br><span class="line">	public static void writeFileByLine(FileChannel fcout, ByteBuffer wBuffer,</span><br><span class="line">			String line) &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			fcout.write(wBuffer.wrap(line.getBytes(<span class="string">"UTF-8"</span>)), fcout.size());</span><br><span class="line"></span><br><span class="line">		&#125; catch (IOException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -377,9 +345,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag">#Python</a>
+            <a href="/tags/NIO/" rel="tag">#NIO</a>
           
-            <a href="/tags/笔记/" rel="tag">#笔记</a>
+            <a href="/tags/读取大文件/" rel="tag">#读取大文件</a>
           
         </div>
       
@@ -388,17 +356,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/04/23/Concise-introduce/" rel="next" title="Concise主题介绍">
-                <i class="fa fa-chevron-left"></i> Concise主题介绍
+              <a href="/2016/03/17/maven-and-ssmframework/" rel="next" title="MyEclipse使用Maven创建web项目+搭建SSM框架教程">
+                <i class="fa fa-chevron-left"></i> MyEclipse使用Maven创建web项目+搭建SSM框架教程
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/04/28/baiduzhanzhang-sitemap-grab-failure/" rel="prev" title="百度站长平台Sitemap(数据提交)抓取失败解决方法">
-                百度站长平台Sitemap(数据提交)抓取失败解决方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -413,10 +377,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/04/24/head-first-python-reading-notes-2/"
-     data-title="《Head_First_Python》阅读笔记(7、11章)"
+        <div class="ds-share flat" data-thread-key="2016/03/17/nio-read-and-write-large-file/"
+     data-title="JAVA之NIO按行读写大文件，完美解决中文乱码问题"
      data-content=""
-     data-url="http://opiece.me/2015/04/24/head-first-python-reading-notes-2/">
+     data-url="http://opiece.me/2016/03/17/nio-read-and-write-large-file/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -443,8 +407,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/04/24/head-first-python-reading-notes-2/"
-           data-title="《Head_First_Python》阅读笔记(7、11章)" data-url="http://opiece.me/2015/04/24/head-first-python-reading-notes-2/">
+      <div class="ds-thread" data-thread-key="2016/03/17/nio-read-and-write-large-file/"
+           data-title="JAVA之NIO按行读写大文件，完美解决中文乱码问题" data-url="http://opiece.me/2016/03/17/nio-read-and-write-large-file/">
       </div>
     
   </div>
@@ -553,7 +517,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第七章：web开发"><span class="nav-number">2.1.</span> <span class="nav-text">第七章：web开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十一章：数据加工"><span class="nav-number">2.2.</span> <span class="nav-text">第十一章：数据加工</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
