@@ -1534,7 +1534,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8bffcb;
+  background: #83a145;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2036,6 +2036,13 @@ a.search-result {
   margin-right: 10px;
 }
 .site-uv::after {
+  content: "|";
+  padding-left: 10px;
+}
+.theme-info {
+  margin-right: 10px;
+}
+.theme-info::after {
   content: "|";
   padding-left: 10px;
 }
